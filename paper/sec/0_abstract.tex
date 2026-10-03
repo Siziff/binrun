@@ -1,0 +1,31 @@
+\begin{abstract}
+Biological collections hold hundreds of millions of specimens whose label
+metadata remain largely ``dark data.'' At the Komarov Botanical Institute
+(LE), the world's fifth-largest herbarium, fewer than 1\,\% of the mycological
+holdings are imaged and only $\sim$22\,\% carry structured metadata. We present
+a systematic study of automatic transcription and structuring of herbarium
+label metadata on a demanding real-world corpus: 394 type specimens of smut
+fungi (Ustilaginomycotina) from LE, spanning 1873--2009, four languages
+(Latin, German, English, and Russian including pre-reform orthography), and
+four text types (typeset, typewritten, handwritten, mixed). Across
+\textbf{17 experiments} we compare (i) a seven-engine classical OCR ensemble
+with orientation preprocessing, (ii) 18 vision-language models (VLMs) as
+normalizers in zero-shot, few-shot, and OCR-fusion regimes, (iii) two-stage
+OCR-VLM+formatter pipelines, and (iv) parameter-efficient low-rank adaptation
+(LoRA) of Qwen3-VL-8B-Instruct selected by an 83-configuration sweep. All
+systems are scored against a 21-field Darwin~Core-aligned schema with a single
+unified metric suite. Classical OCR reaches at best $F_1=0.767$; a zero-shot
+VLM $0.807$; five-shot prompting adds $+6.7$ points to $0.874$; and a LoRA
+adapter trained on only 310 examples in $\sim$25\,min on one GPU attains
+$F_1=\textbf{0.972}$ ($\mathrm{CER}=0.061$) on the full corpus---a $+24.0$-point
+gain over the OCR baseline, beating 18 stronger or larger models. We show that
+merging the adapter and batching inference yields a $5\times$ speedup
+($2.77$\,s/image) at negligible quality loss; that a GBIF taxonomic validator
+is a quality \emph{signal} rather than an $F_1$ booster; and that a naive LLM
+corrector \emph{hurts} by substituting modern synonyms for historical names.
+A four-model consensus audit surfaces 51 likely ground-truth omissions.
+Finally, applying the production model to 534 unseen \emph{Anthracoidea}
+specimens yields a $99.8\,\%$ parse rate with per-field behavior consistent
+with the annotated corpus. Our results provide a practical, on-premise recipe
+for cost-effective mobilization of mycological label data.
+\end{abstract}

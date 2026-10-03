@@ -1,0 +1,10 @@
+{
+  "run_id": "p5k_r32_lr7e5_ep5_drop20",
+  "rank": 32,
+  "lr": 7e-05,
+  "epochs": 5,
+  "dropout": 0.2,
+  "target_modules": "all-linear",
+  "grad_accum": 8,
+  "warmup_ratio": 0.1
+}

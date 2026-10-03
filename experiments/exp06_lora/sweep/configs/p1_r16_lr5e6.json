@@ -1,0 +1,10 @@
+{
+  "run_id": "p1_r16_lr5e6",
+  "rank": 16,
+  "lr": 5e-06,
+  "epochs": 3,
+  "dropout": 0.05,
+  "target_modules": "all-linear",
+  "grad_accum": 8,
+  "warmup_ratio": 0.1
+}

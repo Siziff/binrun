@@ -1,0 +1,8 @@
+{
+  "engine": "trocr-printed",
+  "n_images": 394,
+  "n_ok": 394,
+  "n_err": 0,
+  "total_seconds": 596.7696236670017,
+  "mean_runtime": 1.49635567772084
+}

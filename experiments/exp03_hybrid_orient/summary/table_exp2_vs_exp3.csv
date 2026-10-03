@@ -1,0 +1,8 @@
+engine,CER_exp3,WER_exp3,sim_exp3,f_recall_exp3,micro_P_exp3,micro_R_exp3,micro_F1_exp3,macro_F1_exp3,soft_R_exp3,sec/img_exp3,CER_exp2,ΔCER,WER_exp2,ΔWER,sim_exp2,Δsim,f_recall_exp2,Δf_recall,micro_P_exp2,Δmicro_P,micro_R_exp2,Δmicro_R,micro_F1_exp2,ΔmicroF1,macro_F1_exp2,ΔmacroF1,soft_R_exp2,Δsoft_R,sec/img_exp2,Δsec/img
+tesseract,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+paddleocr,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+easyocr,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+doctr,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+surya,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+trocr-printed,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+trocr-handwritten,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

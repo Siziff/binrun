@@ -1,0 +1,8 @@
+{
+  "engine": "tesseract",
+  "n_images": 394,
+  "n_ok": 380,
+  "n_err": 14,
+  "total_seconds": 2133.1094764701556,
+  "mean_runtime": 5.3937713494483
+}

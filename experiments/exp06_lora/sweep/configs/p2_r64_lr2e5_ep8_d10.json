@@ -1,0 +1,10 @@
+{
+  "run_id": "p2_r64_lr2e5_ep8_d10",
+  "rank": 64,
+  "lr": 2e-05,
+  "epochs": 8,
+  "dropout": 0.1,
+  "target_modules": "all-linear",
+  "grad_accum": 8,
+  "warmup_ratio": 0.1
+}

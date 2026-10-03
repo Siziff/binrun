@@ -1,0 +1,10 @@
+{
+  "run_id": "p4h_r32_lr1e4_ep5",
+  "rank": 32,
+  "lr": 0.00015,
+  "epochs": 5,
+  "dropout": 0.05,
+  "target_modules": "all-linear",
+  "grad_accum": 8,
+  "warmup_ratio": 0.1
+}

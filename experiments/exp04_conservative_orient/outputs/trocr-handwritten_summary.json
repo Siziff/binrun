@@ -1,0 +1,8 @@
+{
+  "engine": "trocr-handwritten",
+  "n_images": 394,
+  "n_ok": 394,
+  "n_err": 0,
+  "total_seconds": 572.7812261930667,
+  "mean_runtime": 1.4040887415454
+}

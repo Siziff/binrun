@@ -1,0 +1,2366 @@
+{
+  "LE F-22416.JPG": {
+    "catalog_number": "LE F-22416",
+    "catalog_number_raw": "22416",
+    "scientific_name": "Exobasidium discoideum Ellis",
+    "type_status": "Isotype"
+  },
+  "LE F-22418.JPG": {
+    "catalog_number": "LE F-22418",
+    "catalog_number_raw": "22418",
+    "scientific_name": "Exobasidium indicum Syd., P. Syd. & E.J. Butler",
+    "type_status": "Isotype"
+  },
+  "LE F-22419.JPG": {
+    "catalog_number": "LE F-22419",
+    "catalog_number_raw": "22419",
+    "scientific_name": "Exobasidium ledi P. Karst.",
+    "type_status": "Lectotype"
+  },
+  "LE F-22420.JPG": {
+    "catalog_number": "LE F-22420",
+    "catalog_number_raw": "22420",
+    "scientific_name": "Exobasidium magnusii Woron.",
+    "type_status": "Type"
+  },
+  "LE F-22421.JPG": {
+    "catalog_number": "LE F-22421",
+    "catalog_number_raw": "22421",
+    "scientific_name": "Exobasidium patavinum D. Sacc.",
+    "type_status": "Type"
+  },
+  "LE F-22422.JPG": {
+    "catalog_number": "LE F-22422",
+    "catalog_number_raw": "22422",
+    "scientific_name": "Ustilago kusanoi Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-22423.JPG": {
+    "catalog_number": "LE F-22423",
+    "catalog_number_raw": "22423",
+    "scientific_name": "Exobasidium stellariae P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-37654.JPG": {
+    "catalog_number": "LE F-37654",
+    "catalog_number_raw": "37654",
+    "scientific_name": "Exobasidium nannfeldtii V.A. Dudka",
+    "type_status": "Isotype"
+  },
+  "LE F-37927.JPG": {
+    "catalog_number": "LE F-37927",
+    "catalog_number_raw": "37927",
+    "scientific_name": "Exobasidium andromedae P. Karst.",
+    "type_status": "Type"
+  },
+  "LE F-38021.JPG": {
+    "catalog_number": "LE F-38021",
+    "catalog_number_raw": "38021",
+    "scientific_name": "Exobasidium nannfeldtii V.A. Dudka",
+    "type_status": "Holotype"
+  },
+  "LE F-43478.JPG": {
+    "catalog_number": "LE F-43478",
+    "catalog_number_raw": "43478",
+    "scientific_name": "Anthracoidea buxbaumii Kukkonen",
+    "type_status": "Paratype"
+  },
+  "LE F-43487.JPG": {
+    "catalog_number": "LE F-43487",
+    "catalog_number_raw": "43487",
+    "scientific_name": "Anthracoidea pulicaris Kukkonen",
+    "type_status": "Paratype"
+  },
+  "LE F-43488.JPG": {
+    "catalog_number": "LE F-43488",
+    "catalog_number_raw": "43488",
+    "scientific_name": "Cintractia merrillii Henn.",
+    "type_status": "Type"
+  },
+  "LE F-43489.JPG": {
+    "catalog_number": "LE F-43489",
+    "catalog_number_raw": "43489",
+    "scientific_name": "Cintractia arctica (Rostr.) Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-43490.JPG": {
+    "catalog_number": "LE F-43490",
+    "catalog_number_raw": "43490",
+    "scientific_name": "Doassansia hypoxidis Bres.",
+    "type_status": "Type"
+  },
+  "LE F-43491.JPG": {
+    "catalog_number": "LE F-43491",
+    "catalog_number_raw": "43491",
+    "scientific_name": "Doassansia opaca Setch.",
+    "type_status": "Type"
+  },
+  "LE F-43492.JPG": {
+    "catalog_number": "LE F-43492",
+    "catalog_number_raw": "43492",
+    "scientific_name": "Doassansia opaca Setch.",
+    "type_status": "Type"
+  },
+  "LE F-43493.JPG": {
+    "catalog_number": "LE F-43493",
+    "catalog_number_raw": "43493",
+    "scientific_name": "Doassansia rhinanthi Lagerh. ex Zundel",
+    "type_status": "Type"
+  },
+  "LE F-43494.JPG": {
+    "catalog_number": "LE F-43494",
+    "catalog_number_raw": "43494",
+    "scientific_name": "Entyloma arnicale Ellis & Everh.",
+    "type_status": "Type"
+  },
+  "LE F-43495.JPG": {
+    "catalog_number": "LE F-43495",
+    "catalog_number_raw": "43495",
+    "scientific_name": "Entyloma bicolor Zopf",
+    "type_status": "Type"
+  },
+  "LE F-43497.JPG": {
+    "catalog_number": "LE F-43497",
+    "catalog_number_raw": "43497",
+    "scientific_name": "Entyloma leucanthemi Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-43498.JPG": {
+    "catalog_number": "LE F-43498",
+    "catalog_number_raw": "43498",
+    "scientific_name": "Entyloma feurichii Krieg.",
+    "type_status": "Type"
+  },
+  "LE F-43499.JPG": {
+    "catalog_number": "LE F-43499",
+    "catalog_number_raw": "43499",
+    "scientific_name": "Entyloma fischeri Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-43500.JPG": {
+    "catalog_number": "LE F-43500",
+    "catalog_number_raw": "43500",
+    "scientific_name": "Entyloma fuscellum J. Schröt.",
+    "type_status": "Type"
+  },
+  "LE F-43501.JPG": {
+    "catalog_number": "LE F-43501",
+    "catalog_number_raw": "43501",
+    "scientific_name": "Entyloma fuscellum J. Schröt.",
+    "type_status": "Type"
+  },
+  "LE F-43502.JPG": {
+    "catalog_number": "LE F-43502",
+    "catalog_number_raw": "43502",
+    "scientific_name": "Entyloma garhadioli Golovin",
+    "type_status": "Type"
+  },
+  "LE F-43503.JPG": {
+    "catalog_number": "LE F-43503",
+    "catalog_number_raw": "43503",
+    "scientific_name": "Entyloma glyceriae Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-43504.JPG": {
+    "catalog_number": "LE F-43504",
+    "catalog_number_raw": "43504",
+    "scientific_name": "Entyloma henningsianum Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-43505.JPG": {
+    "catalog_number": "LE F-43505",
+    "catalog_number_raw": "43505",
+    "scientific_name": "Entyloma henningsianum Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-43506.JPG": {
+    "catalog_number": "LE F-43506",
+    "catalog_number_raw": "43506",
+    "scientific_name": "Entyloma holwayi P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-43507.JPG": {
+    "catalog_number": "LE F-43507",
+    "catalog_number_raw": "43507",
+    "scientific_name": "Entyloma holwayi P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-43508.JPG": {
+    "catalog_number": "LE F-43508",
+    "catalog_number_raw": "43508",
+    "scientific_name": "Entyloma hottoniae Rostr.",
+    "type_status": "Type"
+  },
+  "LE F-43509.JPG": {
+    "catalog_number": "LE F-43509",
+    "catalog_number_raw": "43509",
+    "scientific_name": "Entyloma hydrophilum Sacc. & Paol.",
+    "type_status": "Type"
+  },
+  "LE F-43511.JPG": {
+    "catalog_number": "LE F-43511",
+    "catalog_number_raw": "43511",
+    "scientific_name": "Entyloma ludwigianum Syd.",
+    "type_status": "Type"
+  },
+  "LE F-43512.JPG": {
+    "catalog_number": "LE F-43512",
+    "catalog_number_raw": "43512",
+    "scientific_name": "Entyloma matricariae Rostr.",
+    "type_status": "Type"
+  },
+  "LE F-43513.JPG": {
+    "catalog_number": "LE F-43513",
+    "catalog_number_raw": "43513",
+    "scientific_name": "Entyloma myosotidis Rostr.",
+    "type_status": "Type"
+  },
+  "LE F-43514.JPG": {
+    "catalog_number": "LE F-43514",
+    "catalog_number_raw": "43514",
+    "scientific_name": "Entyloma veronicicola Lindr.",
+    "type_status": "Type"
+  },
+  "LE F-43515.JPG": {
+    "catalog_number": "LE F-43515",
+    "catalog_number_raw": "43515",
+    "scientific_name": "Entyloma veronicicola Lindr.",
+    "type_status": "Type"
+  },
+  "LE F-43516.JPG": {
+    "catalog_number": "LE F-43516",
+    "catalog_number_raw": "43516",
+    "scientific_name": "Entylomella smarodsii Moesz",
+    "type_status": "Type"
+  },
+  "LE F-43517.JPG": {
+    "catalog_number": "LE F-43517",
+    "catalog_number_raw": "43517",
+    "scientific_name": "Geminella foliicola (W. Hausm.) J. Schröt.",
+    "type_status": "Type"
+  },
+  "LE F-43518.JPG": {
+    "catalog_number": "LE F-43518",
+    "catalog_number_raw": "43518",
+    "scientific_name": "Graphiola arengae Racib.",
+    "type_status": "Type"
+  },
+  "LE F-43520.JPG": {
+    "catalog_number": "LE F-43520",
+    "catalog_number_raw": "43520",
+    "scientific_name": "Graphiola borassi Syd., P. Syd. & E.J. Butler",
+    "type_status": "Type"
+  },
+  "LE F-43521.JPG": {
+    "catalog_number": "LE F-43521",
+    "catalog_number_raw": "43521",
+    "scientific_name": "Paepalopsis deformans Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-43523.JPG": {
+    "catalog_number": "LE F-43523",
+    "catalog_number_raw": "43523",
+    "scientific_name": "Protomyces limosellae J. Kunze",
+    "type_status": "Type"
+  },
+  "LE F-43525.JPG": {
+    "catalog_number": "LE F-43525",
+    "catalog_number_raw": "43525",
+    "scientific_name": "Sorosporium bullatum J. Schröt.",
+    "type_status": "Type"
+  },
+  "LE F-43526.JPG": {
+    "catalog_number": "LE F-43526",
+    "catalog_number_raw": "43526",
+    "scientific_name": "Sorosporium flagellatum Syd., P. Syd. & E.J. Butler",
+    "type_status": "Type"
+  },
+  "LE F-43527.JPG": {
+    "catalog_number": "LE F-43527",
+    "catalog_number_raw": "43527",
+    "scientific_name": "Sorosporium flagellatum Syd., P. Syd. & E.J. Butler",
+    "type_status": "Type"
+  },
+  "LE F-43528.JPG": {
+    "catalog_number": "LE F-43528",
+    "catalog_number_raw": "43528",
+    "scientific_name": "Sorosporium desertorum Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-43529.JPG": {
+    "catalog_number": "LE F-43529",
+    "catalog_number_raw": "43529",
+    "scientific_name": "Sorosporium lavrovianum Smarods",
+    "type_status": "Type"
+  },
+  "LE F-43530.JPG": {
+    "catalog_number": "LE F-43530",
+    "catalog_number_raw": "43530",
+    "scientific_name": "Sorosporium holstii Henn.",
+    "type_status": "Type"
+  },
+  "LE F-43531.JPG": {
+    "catalog_number": "LE F-43531",
+    "catalog_number_raw": "43531",
+    "scientific_name": "Sorosporium lavrovianum Smarods",
+    "type_status": "Type"
+  },
+  "LE F-43532.JPG": {
+    "catalog_number": "LE F-43532",
+    "catalog_number_raw": "43532",
+    "scientific_name": "Sorosporium lavrovianum Smarods",
+    "type_status": "Type"
+  },
+  "LE F-43533_1.JPG": {
+    "catalog_number": "LE F-43533",
+    "catalog_number_raw": "43533",
+    "scientific_name": "Sorosporium reverdattoanum Lavrov",
+    "type_status": "Type"
+  },
+  "LE F-43533_2.JPG": {
+    "catalog_number": "LE F-43533",
+    "catalog_number_raw": "43533",
+    "scientific_name": "Sorosporium reverdattoanum Lavrov",
+    "type_status": "Type"
+  },
+  "LE F-43534.JPG": {
+    "catalog_number": "LE F-43534",
+    "catalog_number_raw": "43534",
+    "scientific_name": "Sorosporium vossianum Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-43535.JPG": {
+    "catalog_number": "LE F-43535",
+    "catalog_number_raw": "43535",
+    "scientific_name": "Sphacelotheca polygoni-alpini Cruchet",
+    "type_status": "Type"
+  },
+  "LE F-43551.JPG": {
+    "catalog_number": "LE F-43551",
+    "catalog_number_raw": "43551",
+    "scientific_name": "Tilletia narduri P. Nagorny",
+    "type_status": "Type"
+  },
+  "LE F-43552.JPG": {
+    "catalog_number": "LE F-43552",
+    "catalog_number_raw": "43552",
+    "scientific_name": "Tilletia pancicii Bubák & Ranoj.",
+    "type_status": "Type"
+  },
+  "LE F-43553.JPG": {
+    "catalog_number": "LE F-43553",
+    "catalog_number_raw": "43553",
+    "scientific_name": "Tilletia torquens Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-43554.JPG": {
+    "catalog_number": "LE F-43554",
+    "catalog_number_raw": "43554",
+    "scientific_name": "Tilletia torquens Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-43556.JPG": {
+    "catalog_number": "LE F-43556",
+    "catalog_number_raw": "43556",
+    "scientific_name": "Tuburcinia schizocaulon (Ces.) Maire",
+    "type_status": null
+  },
+  "LE F-43557.JPG": {
+    "catalog_number": "LE F-43557",
+    "catalog_number_raw": "43557",
+    "scientific_name": "Tuburcinia schizocaulon (Ces.) Maire",
+    "type_status": null
+  },
+  "LE F-43558.JPG": {
+    "catalog_number": "LE F-43558",
+    "catalog_number_raw": "43558",
+    "scientific_name": "Tuburcinia clintoniae Kom.",
+    "type_status": "Type"
+  },
+  "LE F-43559.JPG": {
+    "catalog_number": "LE F-43559",
+    "catalog_number_raw": "43559",
+    "scientific_name": "Tuburcinia clintoniae Kom.",
+    "type_status": "Type"
+  },
+  "LE F-43560.JPG": {
+    "catalog_number": "LE F-43560",
+    "catalog_number_raw": "43560",
+    "scientific_name": "Tuburcinia clintoniae Kom.",
+    "type_status": "Type"
+  },
+  "LE F-43561.JPG": {
+    "catalog_number": "LE F-43561",
+    "catalog_number_raw": "43561",
+    "scientific_name": "Tuburcinia clintoniae Kom.",
+    "type_status": "Type"
+  },
+  "LE F-43562.JPG": {
+    "catalog_number": "LE F-43562",
+    "catalog_number_raw": "43562",
+    "scientific_name": "Tuburcinia clintoniae Kom.",
+    "type_status": "Type"
+  },
+  "LE F-43563.JPG": {
+    "catalog_number": "LE F-43563",
+    "catalog_number_raw": "43563",
+    "scientific_name": "Tuburcinia clintoniae Kom.",
+    "type_status": "Type"
+  },
+  "LE F-43566.JPG": {
+    "catalog_number": "LE F-43566",
+    "catalog_number_raw": "43566",
+    "scientific_name": "Urocystis beckmanniae I.E. Brezhnev",
+    "type_status": "Type"
+  },
+  "LE F-43567.JPG": {
+    "catalog_number": "LE F-43567",
+    "catalog_number_raw": "43567",
+    "scientific_name": "Urocystis bomareae Dietel & Neger",
+    "type_status": "Type"
+  },
+  "LE F-43568.JPG": {
+    "catalog_number": "LE F-43568",
+    "catalog_number_raw": "43568",
+    "scientific_name": "Urocystis bomareae Dietel & Neger",
+    "type_status": "Type"
+  },
+  "LE F-43569.JPG": {
+    "catalog_number": "LE F-43569",
+    "catalog_number_raw": "43569",
+    "scientific_name": "Urocystis callianthemi Domashova",
+    "type_status": "Type"
+  },
+  "LE F-43570.JPG": {
+    "catalog_number": "LE F-43570",
+    "catalog_number_raw": "43570",
+    "scientific_name": "Urocystis corydalis Niessl",
+    "type_status": "Type"
+  },
+  "LE F-43571.JPG": {
+    "catalog_number": "LE F-43571",
+    "catalog_number_raw": "43571",
+    "scientific_name": "Urocystis magica Pass.",
+    "type_status": "Type"
+  },
+  "LE F-43572.JPG": {
+    "catalog_number": "LE F-43572",
+    "catalog_number_raw": "43572",
+    "scientific_name": "Urocystis mustaphae Maire",
+    "type_status": "Type"
+  },
+  "LE F-43573.JPG": {
+    "catalog_number": "LE F-43573",
+    "catalog_number_raw": "43573",
+    "scientific_name": "Urocystis oxalidis Pazschke",
+    "type_status": "Type"
+  },
+  "LE F-43574.JPG": {
+    "catalog_number": "LE F-43574",
+    "catalog_number_raw": "43574",
+    "scientific_name": "Urocystis poae-palustris Vánky",
+    "type_status": "Type"
+  },
+  "LE F-43575.JPG": {
+    "catalog_number": "LE F-43575",
+    "catalog_number_raw": "43575",
+    "scientific_name": "Urocystis tothii Vánky",
+    "type_status": "Type"
+  },
+  "LE F-43576.JPG": {
+    "catalog_number": "LE F-43576",
+    "catalog_number_raw": "43576",
+    "scientific_name": "Urocystis ulei Magnus",
+    "type_status": "Type"
+  },
+  "LE F-43577.JPG": {
+    "catalog_number": "LE F-43577",
+    "catalog_number_raw": "43577",
+    "scientific_name": "Urocystis ulei Magnus",
+    "type_status": "Type"
+  },
+  "LE F-43578.JPG": {
+    "catalog_number": "LE F-43578",
+    "catalog_number_raw": "43578",
+    "scientific_name": "Ustilago acetosellae Maire",
+    "type_status": "Type"
+  },
+  "LE F-43579.JPG": {
+    "catalog_number": "LE F-43579",
+    "catalog_number_raw": "43579",
+    "scientific_name": "Ustilago egyptiaca A.A. Fisch. Waldh.",
+    "type_status": "Type"
+  },
+  "LE F-43580.JPG": {
+    "catalog_number": "LE F-43580",
+    "catalog_number_raw": "43580",
+    "scientific_name": "Ustilago baldingerae Vestergr.",
+    "type_status": "Type"
+  },
+  "LE F-43582_1.JPG": {
+    "catalog_number": "LE F-43582",
+    "catalog_number_raw": "43582",
+    "scientific_name": "Ustilago andropogonis-hirtifolii Henn.",
+    "type_status": "Type"
+  },
+  "LE F-43582_2.JPG": {
+    "catalog_number": "LE F-43582",
+    "catalog_number_raw": "43582",
+    "scientific_name": "Ustilago andropogonis-hirtifolii Henn.",
+    "type_status": "Type"
+  },
+  "LE F-43583.JPG": {
+    "catalog_number": "LE F-43583",
+    "catalog_number_raw": "43583",
+    "scientific_name": "Ustilago cichorii Syd.",
+    "type_status": "Type"
+  },
+  "LE F-43584.JPG": {
+    "catalog_number": "LE F-43584",
+    "catalog_number_raw": "43584",
+    "scientific_name": "Ustilago cilinodis Savile",
+    "type_status": "Type"
+  },
+  "LE F-43585.JPG": {
+    "catalog_number": "LE F-43585",
+    "catalog_number_raw": "43585",
+    "scientific_name": "Ustilago crameri Körn.",
+    "type_status": "Type"
+  },
+  "LE F-43586.JPG": {
+    "catalog_number": "LE F-43586",
+    "catalog_number_raw": "43586",
+    "scientific_name": "Ustilago crameri Körn.",
+    "type_status": "Type"
+  },
+  "LE F-43587.JPG": {
+    "catalog_number": "LE F-43587",
+    "catalog_number_raw": "43587",
+    "scientific_name": "Ustilago cutandiae-memphiticae Maire",
+    "type_status": "Type"
+  },
+  "LE F-43588.JPG": {
+    "catalog_number": "LE F-43588",
+    "catalog_number_raw": "43588",
+    "scientific_name": "Ustilago cutandiae-memphiticae Maire",
+    "type_status": "Type"
+  },
+  "LE F-43589.JPG": {
+    "catalog_number": "LE F-43589",
+    "catalog_number_raw": "43589",
+    "scientific_name": "Ustilago dieteliana Henn.",
+    "type_status": "Type"
+  },
+  "LE F-43590.JPG": {
+    "catalog_number": "LE F-43590",
+    "catalog_number_raw": "43590",
+    "scientific_name": "Ustilago dieteliana Henn.",
+    "type_status": "Type"
+  },
+  "LE F-43591.JPG": {
+    "catalog_number": "LE F-43591",
+    "catalog_number_raw": "43591",
+    "scientific_name": "Ustilago dieteliana Henn.",
+    "type_status": "Type"
+  },
+  "LE F-43593.JPG": {
+    "catalog_number": "LE F-43593",
+    "catalog_number_raw": "43593",
+    "scientific_name": "Ustilago ehrenbergiana A.A. Fisch. Waldh.",
+    "type_status": "Type"
+  },
+  "LE F-43594.JPG": {
+    "catalog_number": "LE F-43594",
+    "catalog_number_raw": "43594",
+    "scientific_name": "Ustilago hierochloae Jacz.",
+    "type_status": "Type"
+  },
+  "LE F-43595.JPG": {
+    "catalog_number": "LE F-43595",
+    "catalog_number_raw": "43595",
+    "scientific_name": "Sorosporium holstii Henn.",
+    "type_status": "Type"
+  },
+  "LE F-43596.JPG": {
+    "catalog_number": "LE F-43596",
+    "catalog_number_raw": "43596",
+    "scientific_name": "Ustilago holwayi Dietel",
+    "type_status": "Type"
+  },
+  "LE F-43597.JPG": {
+    "catalog_number": "LE F-43597",
+    "catalog_number_raw": "43597",
+    "scientific_name": "Ustilago inayatii Syd., P. Syd. & E.J. Butler",
+    "type_status": "Type"
+  },
+  "LE F-43598.JPG": {
+    "catalog_number": "LE F-43598",
+    "catalog_number_raw": "43598",
+    "scientific_name": "Ustilago intermedia J. Schröt.",
+    "type_status": "Type"
+  },
+  "LE F-43600.JPG": {
+    "catalog_number": "LE F-43600",
+    "catalog_number_raw": "43600",
+    "scientific_name": "Ustilago kolaczekii J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-43601.JPG": {
+    "catalog_number": "LE F-43601",
+    "catalog_number_raw": "43601",
+    "scientific_name": "Ustilago kusanoi Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-43602.JPG": {
+    "catalog_number": "LE F-43602",
+    "catalog_number_raw": "43602",
+    "scientific_name": "Ustilago lorentziana Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-43603.JPG": {
+    "catalog_number": "LE F-43603",
+    "catalog_number_raw": "43603",
+    "scientific_name": "Ustilago muelleriana Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-43604.JPG": {
+    "catalog_number": "LE F-43604",
+    "catalog_number_raw": "43604",
+    "scientific_name": "Ustilago muelleriana Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-43605.JPG": {
+    "catalog_number": "LE F-43605",
+    "catalog_number_raw": "43605",
+    "scientific_name": "Ustilago neglecta Niessl",
+    "type_status": "Type"
+  },
+  "LE F-43606.JPG": {
+    "catalog_number": "LE F-43606",
+    "catalog_number_raw": "43606",
+    "scientific_name": "Ustilago pallida Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-43607.JPG": {
+    "catalog_number": "LE F-43607",
+    "catalog_number_raw": "43607",
+    "scientific_name": "Ustilago panici-proliferi Henn.",
+    "type_status": "Type"
+  },
+  "LE F-43608.JPG": {
+    "catalog_number": "LE F-43608",
+    "catalog_number_raw": "43608",
+    "scientific_name": "Ustilago paradoxa Syd., P. Syd. & E.J. Butler",
+    "type_status": "Type"
+  },
+  "LE F-43609.JPG": {
+    "catalog_number": "LE F-43609",
+    "catalog_number_raw": "43609",
+    "scientific_name": "Ustilago plumbea Rostr.",
+    "type_status": "Type"
+  },
+  "LE F-43610.JPG": {
+    "catalog_number": "LE F-43610",
+    "catalog_number_raw": "43610",
+    "scientific_name": "Ustilago plumbea Rostr.",
+    "type_status": "Type"
+  },
+  "LE F-43611.JPG": {
+    "catalog_number": "LE F-43611",
+    "catalog_number_raw": "43611",
+    "scientific_name": "Ustilago poae-bulbosae Săvul.",
+    "type_status": "Type"
+  },
+  "LE F-43612.JPG": {
+    "catalog_number": "LE F-43612",
+    "catalog_number_raw": "43612",
+    "scientific_name": "Ustilago rabenhorstiana f. agrestis J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-43613.JPG": {
+    "catalog_number": "LE F-43613",
+    "catalog_number_raw": "43613",
+    "scientific_name": "Ustilago rabenhorstiana J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-43614.JPG": {
+    "catalog_number": "LE F-43614",
+    "catalog_number_raw": "43614",
+    "scientific_name": "Ustilago rabenhorstiana J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-43615.JPG": {
+    "catalog_number": "LE F-43615",
+    "catalog_number_raw": "43615",
+    "scientific_name": "Ustilago reessiana f. cardui-acanthoides J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-43616.JPG": {
+    "catalog_number": "LE F-43616",
+    "catalog_number_raw": "43616",
+    "scientific_name": "Ustilago reessiana f. cardui-nutantis J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-43617.JPG": {
+    "catalog_number": "LE F-43617",
+    "catalog_number_raw": "43617",
+    "scientific_name": "Ustilago reessiana f. cardui-acanthoides J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-43618.JPG": {
+    "catalog_number": "LE F-43618",
+    "catalog_number_raw": "43618",
+    "scientific_name": "Ustilago schweinfurthiana Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-43619.JPG": {
+    "catalog_number": "LE F-43619",
+    "catalog_number_raw": "43619",
+    "scientific_name": "Ustilago sorghi (Ehrenb. ex Link) Pass.",
+    "type_status": "Type"
+  },
+  "LE F-43620.JPG": {
+    "catalog_number": "LE F-43620",
+    "catalog_number_raw": "43620",
+    "scientific_name": "Ustilago strumosa Cooke",
+    "type_status": "Type"
+  },
+  "LE F-43621_1.JPG": {
+    "catalog_number": "LE F-43621",
+    "catalog_number_raw": "43621",
+    "scientific_name": "Ustilago tulasnei J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-43621_2.JPG": {
+    "catalog_number": "LE F-43621",
+    "catalog_number_raw": "43621",
+    "scientific_name": "Ustilago tulasnei J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-43622.JPG": {
+    "catalog_number": "LE F-43622",
+    "catalog_number_raw": "43622",
+    "scientific_name": "Ustilago tragica Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-43623.JPG": {
+    "catalog_number": "LE F-43623",
+    "catalog_number_raw": "43623",
+    "scientific_name": "Ustilago turcomanica Tranzschel",
+    "type_status": "Type"
+  },
+  "LE F-43624.JPG": {
+    "catalog_number": "LE F-43624",
+    "catalog_number_raw": "43624",
+    "scientific_name": "Ustilago turcomanica Tranzschel",
+    "type_status": "Type"
+  },
+  "LE F-43625.JPG": {
+    "catalog_number": "LE F-43625",
+    "catalog_number_raw": "43625",
+    "scientific_name": "Ustilago turcomanica Tranzschel",
+    "type_status": "Type"
+  },
+  "LE F-43626.JPG": {
+    "catalog_number": "LE F-43626",
+    "catalog_number_raw": "43626",
+    "scientific_name": "Ustilago turcomanica Tranzschel",
+    "type_status": "Type"
+  },
+  "LE F-43627.JPG": {
+    "catalog_number": "LE F-43627",
+    "catalog_number_raw": "43627",
+    "scientific_name": "Ustilago turcomanica Tranzschel",
+    "type_status": "Type"
+  },
+  "LE F-43628.JPG": {
+    "catalog_number": "LE F-43628",
+    "catalog_number_raw": "43628",
+    "scientific_name": "Ustilago turcomanica Tranzschel",
+    "type_status": "Type"
+  },
+  "LE F-43630.JPG": {
+    "catalog_number": "LE F-43630",
+    "catalog_number_raw": "43630",
+    "scientific_name": "Vossia moliniae Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-60017.JPG": {
+    "catalog_number": "LE F-60017",
+    "catalog_number_raw": "60017",
+    "scientific_name": "Anthracoidea baldensis Vánky",
+    "type_status": "Topotype"
+  },
+  "LE F-60198.JPG": {
+    "catalog_number": "LE F-60198",
+    "catalog_number_raw": "60198",
+    "scientific_name": "Anthracoidea tomentosae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-60345.JPG": {
+    "catalog_number": "LE F-60345",
+    "catalog_number_raw": "60345",
+    "scientific_name": "Burrillia globulifera Davis",
+    "type_status": "Type"
+  },
+  "LE F-60833_1.JPG": {
+    "catalog_number": "LE F-60833",
+    "catalog_number_raw": "60833",
+    "scientific_name": "Ustilago urceolorum f. scirpi J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-60833_2.JPG": {
+    "catalog_number": "LE F-60833",
+    "catalog_number_raw": "60833",
+    "scientific_name": "Ustilago urceolorum f. scirpi J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-60897.JPG": {
+    "catalog_number": "LE F-60897",
+    "catalog_number_raw": "60897",
+    "scientific_name": "Cintractia variabilis Lehtola",
+    "type_status": "Paratype"
+  },
+  "LE F-61085.JPG": {
+    "catalog_number": "LE F-61085",
+    "catalog_number_raw": "61085",
+    "scientific_name": "Entyloma calceolariae Lagerh.",
+    "type_status": "Original material"
+  },
+  "LE F-61321.JPG": {
+    "catalog_number": "LE F-61321",
+    "catalog_number_raw": "61321",
+    "scientific_name": "Entyloma bicolor Zopf",
+    "type_status": "Type"
+  },
+  "LE F-61326.JPG": {
+    "catalog_number": "LE F-61326",
+    "catalog_number_raw": "61326",
+    "scientific_name": "Entyloma fuscellum J. Schröt.",
+    "type_status": "Type"
+  },
+  "LE F-61355.JPG": {
+    "catalog_number": "LE F-61355",
+    "catalog_number_raw": "61355",
+    "scientific_name": "Entyloma helosciadii Magnus",
+    "type_status": "Type"
+  },
+  "LE F-61500.JPG": {
+    "catalog_number": "LE F-61500",
+    "catalog_number_raw": "61500",
+    "scientific_name": "Entyloma primulae Murashk.",
+    "type_status": "Type"
+  },
+  "LE F-61705.JPG": {
+    "catalog_number": "LE F-61705",
+    "catalog_number_raw": "61705",
+    "scientific_name": "Urocystis corydalis Niessl",
+    "type_status": "Type"
+  },
+  "LE F-61706.JPG": {
+    "catalog_number": "LE F-61706",
+    "catalog_number_raw": "61706",
+    "scientific_name": "Urocystis corydalis Niessl",
+    "type_status": null
+  },
+  "LE F-61707.JPG": {
+    "catalog_number": "LE F-61707",
+    "catalog_number_raw": "61707",
+    "scientific_name": "Urocystis corydalis Niessl",
+    "type_status": null
+  },
+  "LE F-61708.JPG": {
+    "catalog_number": "LE F-61708",
+    "catalog_number_raw": "61708",
+    "scientific_name": "Urocystis corydalis Niessl",
+    "type_status": "Authentic"
+  },
+  "LE F-61721.JPG": {
+    "catalog_number": "LE F-61721",
+    "catalog_number_raw": "61721",
+    "scientific_name": "Entyloma verruculosum Pass. ex A.A. Fisch. Waldh.",
+    "type_status": "Type"
+  },
+  "LE F-61722.JPG": {
+    "catalog_number": "LE F-61722",
+    "catalog_number_raw": "61722",
+    "scientific_name": "Entyloma verruculosum Pass. ex A.A. Fisch. Waldh.",
+    "type_status": "Type"
+  },
+  "LE F-61731.JPG": {
+    "catalog_number": "LE F-61731",
+    "catalog_number_raw": "61731",
+    "scientific_name": "Entyloma winteri Linh.",
+    "type_status": "Isotype"
+  },
+  "LE F-61798.JPG": {
+    "catalog_number": "LE F-61798",
+    "catalog_number_raw": "61798",
+    "scientific_name": "Entyloma helosciadii Magnus",
+    "type_status": "Type"
+  },
+  "LE F-61799.JPG": {
+    "catalog_number": "LE F-61799",
+    "catalog_number_raw": "61799",
+    "scientific_name": "Entyloma helosciadii Magnus",
+    "type_status": "Type"
+  },
+  "LE F-61801.JPG": {
+    "catalog_number": "LE F-61801",
+    "catalog_number_raw": "61801",
+    "scientific_name": "Entyloma hydrophilum Sacc. & Paol.",
+    "type_status": "Type"
+  },
+  "LE F-61858.JPG": {
+    "catalog_number": "LE F-61858",
+    "catalog_number_raw": "61858",
+    "scientific_name": "Doassansia zizaniae Davis",
+    "type_status": "Type"
+  },
+  "LE F-61859.JPG": {
+    "catalog_number": "LE F-61859",
+    "catalog_number_raw": "61859",
+    "scientific_name": "Doassansia ranunculina Davis",
+    "type_status": "Type"
+  },
+  "LE F-61978.JPG": {
+    "catalog_number": "LE F-61978",
+    "catalog_number_raw": "61978",
+    "scientific_name": "Melanotaenium koschurnikovaeanum Lavrov",
+    "type_status": "Type"
+  },
+  "LE F-62002.JPG": {
+    "catalog_number": "LE F-62002",
+    "catalog_number_raw": "62002",
+    "scientific_name": "Entyloma endogenum (Unger) Wünsche",
+    "type_status": "Type"
+  },
+  "LE F-62024_1.JPG": {
+    "catalog_number": "LE F-62024",
+    "catalog_number_raw": "62024",
+    "scientific_name": "Mycosyrinx cissi (DC.) Beck",
+    "type_status": null
+  },
+  "LE F-62024_2.JPG": {
+    "catalog_number": "LE F-62024",
+    "catalog_number_raw": "62024",
+    "scientific_name": "Mycosyrinx cissi (DC.) Beck",
+    "type_status": null
+  },
+  "LE F-62028_1.JPG": {
+    "catalog_number": "LE F-62028",
+    "catalog_number_raw": "62028",
+    "scientific_name": "Mycosyrinx cissi (DC.) Beck",
+    "type_status": null
+  },
+  "LE F-62028_2.JPG": {
+    "catalog_number": "LE F-62028",
+    "catalog_number_raw": "62028",
+    "scientific_name": "Mycosyrinx cissi (DC.) Beck",
+    "type_status": null
+  },
+  "LE F-62031.JPG": {
+    "catalog_number": "LE F-62031",
+    "catalog_number_raw": "62031",
+    "scientific_name": "Neovossia danubialis Săvul.",
+    "type_status": "Type"
+  },
+  "LE F-62037.JPG": {
+    "catalog_number": "LE F-62037",
+    "catalog_number_raw": "62037",
+    "scientific_name": "Cintractia arctica (Rostr.) Lagerh.",
+    "type_status": "Isotype"
+  },
+  "LE F-62039.JPG": {
+    "catalog_number": "LE F-62039",
+    "catalog_number_raw": "62039",
+    "scientific_name": "Orphanomyces hungaricus Vánky & Gönczöl",
+    "type_status": "Isotype"
+  },
+  "LE F-62040.JPG": {
+    "catalog_number": "LE F-62040",
+    "catalog_number_raw": "62040",
+    "scientific_name": "Orphanomyces vankyi Savile",
+    "type_status": "Isotype"
+  },
+  "LE F-62083.JPG": {
+    "catalog_number": "LE F-62083",
+    "catalog_number_raw": "62083",
+    "scientific_name": "Geminella foliicola (W. Hausm.) J. Schröt.",
+    "type_status": "Type"
+  },
+  "LE F-62224.JPG": {
+    "catalog_number": "LE F-62224",
+    "catalog_number_raw": "62224",
+    "scientific_name": "Geminella delastrina (Tul. & C. Tul.) J. Schröt.",
+    "type_status": null
+  },
+  "LE F-62244_1.JPG": {
+    "catalog_number": "LE F-62244",
+    "catalog_number_raw": "62244",
+    "scientific_name": "Sorosporium abramovianum Lavrov",
+    "type_status": "Holotype"
+  },
+  "LE F-62244_2.JPG": {
+    "catalog_number": "LE F-62244",
+    "catalog_number_raw": "62244",
+    "scientific_name": "Sorosporium abramovianum Lavrov",
+    "type_status": "Holotype"
+  },
+  "LE F-62246.JPG": {
+    "catalog_number": "LE F-62246",
+    "catalog_number_raw": "62246",
+    "scientific_name": "Sorosporium californicum Harkn.",
+    "type_status": "Type"
+  },
+  "LE F-62409.JPG": {
+    "catalog_number": "LE F-62409",
+    "catalog_number_raw": "62409",
+    "scientific_name": "Doassansia ranunculina Davis",
+    "type_status": "Authentic"
+  },
+  "LE F-62935.JPG": {
+    "catalog_number": "LE F-62935",
+    "catalog_number_raw": "62935",
+    "scientific_name": "Tilletia secalis (Corda) J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-63058.JPG": {
+    "catalog_number": "LE F-63058",
+    "catalog_number_raw": "63058",
+    "scientific_name": "Tilletia triticoides Săvul.",
+    "type_status": "Type"
+  },
+  "LE F-63131.JPG": {
+    "catalog_number": "LE F-63131",
+    "catalog_number_raw": "63131",
+    "scientific_name": "Tolyposporium leptideum Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-63132.JPG": {
+    "catalog_number": "LE F-63132",
+    "catalog_number_raw": "63132",
+    "scientific_name": "Tolyposporium leptideum Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-63167.JPG": {
+    "catalog_number": "LE F-63167",
+    "catalog_number_raw": "63167",
+    "scientific_name": "Tracya hydrocharidis Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-63181.JPG": {
+    "catalog_number": "LE F-63181",
+    "catalog_number_raw": "63181",
+    "scientific_name": "Tilletia transiliensis M.N. Kusnezowa & Schwarzman",
+    "type_status": "Type"
+  },
+  "LE F-63411.JPG": {
+    "catalog_number": "LE F-63411",
+    "catalog_number_raw": "63411",
+    "scientific_name": "Urocystis antipolitana Magnus",
+    "type_status": "Type"
+  },
+  "LE F-63417.JPG": {
+    "catalog_number": "LE F-63417",
+    "catalog_number_raw": "63417",
+    "scientific_name": "Tuburcinia atropidis Lavrov",
+    "type_status": "Type"
+  },
+  "LE F-63616.JPG": {
+    "catalog_number": "LE F-63616",
+    "catalog_number_raw": "63616",
+    "scientific_name": "Urocystis junci var. johansonii Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-63638.JPG": {
+    "catalog_number": "LE F-63638",
+    "catalog_number_raw": "63638",
+    "scientific_name": "Urocystis junci Lagerh.",
+    "type_status": null
+  },
+  "LE F-63639.JPG": {
+    "catalog_number": "LE F-63639",
+    "catalog_number_raw": "63639",
+    "scientific_name": "Urocystis junci Lagerh.",
+    "type_status": null
+  },
+  "LE F-63641.JPG": {
+    "catalog_number": "LE F-63641",
+    "catalog_number_raw": "63641",
+    "scientific_name": "Urocystis lagerheimii Bubák",
+    "type_status": null
+  },
+  "LE F-63642.JPG": {
+    "catalog_number": "LE F-63642",
+    "catalog_number_raw": "63642",
+    "scientific_name": "Urocystis junci Lagerh.",
+    "type_status": null
+  },
+  "LE F-63654.JPG": {
+    "catalog_number": "LE F-63654",
+    "catalog_number_raw": "63654",
+    "scientific_name": "Urocystis leimbachii Oertel",
+    "type_status": null
+  },
+  "LE F-63655.JPG": {
+    "catalog_number": "LE F-63655",
+    "catalog_number_raw": "63655",
+    "scientific_name": "Urocystis leimbachii Oertel",
+    "type_status": "Type"
+  },
+  "LE F-63688.JPG": {
+    "catalog_number": "LE F-63688",
+    "catalog_number_raw": "63688",
+    "scientific_name": "Urocystis magica Pass.",
+    "type_status": "Type"
+  },
+  "LE F-63689.JPG": {
+    "catalog_number": "LE F-63689",
+    "catalog_number_raw": "63689",
+    "scientific_name": "Urocystis magica Pass.",
+    "type_status": null
+  },
+  "LE F-63693.JPG": {
+    "catalog_number": "LE F-63693",
+    "catalog_number_raw": "63693",
+    "scientific_name": "Tuburcinia melicae Lagerh. & Liro",
+    "type_status": "Type"
+  },
+  "LE F-63703.JPG": {
+    "catalog_number": "LE F-63703",
+    "catalog_number_raw": "63703",
+    "scientific_name": "Urocystis mustaphae Maire",
+    "type_status": "Type"
+  },
+  "LE F-63904.JPG": {
+    "catalog_number": "LE F-63904",
+    "catalog_number_raw": "63904",
+    "scientific_name": "Sporisorium ranunculi Lib.",
+    "type_status": "Type"
+  },
+  "LE F-64506_1.JPG": {
+    "catalog_number": "LE F-64506",
+    "catalog_number_raw": "64506",
+    "scientific_name": "Ustilago bosniaca Beck",
+    "type_status": "Type"
+  },
+  "LE F-64506_2.JPG": {
+    "catalog_number": "LE F-64506",
+    "catalog_number_raw": "64506",
+    "scientific_name": "Ustilago bosniaca Beck",
+    "type_status": "Type"
+  },
+  "LE F-64711.JPG": {
+    "catalog_number": "LE F-64711",
+    "catalog_number_raw": "64711",
+    "scientific_name": "Cintractia arctica (Rostr.) Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-64712.JPG": {
+    "catalog_number": "LE F-64712",
+    "catalog_number_raw": "64712",
+    "scientific_name": "Cintractia arctica (Rostr.) Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-64714.JPG": {
+    "catalog_number": "LE F-64714",
+    "catalog_number_raw": "64714",
+    "scientific_name": "Cintractia arctica (Rostr.) Lagerh.",
+    "type_status": null
+  },
+  "LE F-64715.JPG": {
+    "catalog_number": "LE F-64715",
+    "catalog_number_raw": "64715",
+    "scientific_name": "Cintractia arctica (Rostr.) Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-64716.JPG": {
+    "catalog_number": "LE F-64716",
+    "catalog_number_raw": "64716",
+    "scientific_name": "Cintractia arctica (Rostr.) Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-64717.JPG": {
+    "catalog_number": "LE F-64717",
+    "catalog_number_raw": "64717",
+    "scientific_name": "Cintractia arctica (Rostr.) Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-64889_1.JPG": {
+    "catalog_number": "LE F-64889",
+    "catalog_number_raw": "64889",
+    "scientific_name": "Ustilago urceolorum f. scirpi J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-64889_2.JPG": {
+    "catalog_number": "LE F-64889",
+    "catalog_number_raw": "64889",
+    "scientific_name": "Ustilago urceolorum f. scirpi J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-64988.JPG": {
+    "catalog_number": "LE F-64988",
+    "catalog_number_raw": "64988",
+    "scientific_name": "Ustilago crameri Körn.",
+    "type_status": "Type"
+  },
+  "LE F-65002.JPG": {
+    "catalog_number": "LE F-65002",
+    "catalog_number_raw": "65002",
+    "scientific_name": "Ustilago cruenta J.G. Kühn f. culmicola",
+    "type_status": "Type"
+  },
+  "LE F-65005.JPG": {
+    "catalog_number": "LE F-65005",
+    "catalog_number_raw": "65005",
+    "scientific_name": "Ustilago tulasnei J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-65008.JPG": {
+    "catalog_number": "LE F-65008",
+    "catalog_number_raw": "65008",
+    "scientific_name": "Ustilago cruenta J.G. Kühn f. culmicola",
+    "type_status": "Type"
+  },
+  "LE F-65341.JPG": {
+    "catalog_number": "LE F-65341",
+    "catalog_number_raw": "65341",
+    "scientific_name": "Ustilago fischeri Pass.",
+    "type_status": "Type"
+  },
+  "LE F-65342.JPG": {
+    "catalog_number": "LE F-65342",
+    "catalog_number_raw": "65342",
+    "scientific_name": "Ustilago fischeri Pass.",
+    "type_status": "Type"
+  },
+  "LE F-65343.JPG": {
+    "catalog_number": "LE F-65343",
+    "catalog_number_raw": "65343",
+    "scientific_name": "Ustilago fischeri Pass.",
+    "type_status": "Type"
+  },
+  "LE F-65375_1.JPG": {
+    "catalog_number": "LE F-65375",
+    "catalog_number_raw": "65375",
+    "scientific_name": "Ustilago grandis Fr.",
+    "type_status": "Type"
+  },
+  "LE F-65375_2.JPG": {
+    "catalog_number": "LE F-65375",
+    "catalog_number_raw": "65375",
+    "scientific_name": "Ustilago grandis Fr.",
+    "type_status": "Type"
+  },
+  "LE F-65387.JPG": {
+    "catalog_number": "LE F-65387",
+    "catalog_number_raw": "65387",
+    "scientific_name": "Ustilago haynaldiae Becer.",
+    "type_status": "Isotype"
+  },
+  "LE F-65389.JPG": {
+    "catalog_number": "LE F-65389",
+    "catalog_number_raw": "65389",
+    "scientific_name": "Ustilago heleochloae Vánky & Gönczöl",
+    "type_status": "Isotype"
+  },
+  "LE F-65390.JPG": {
+    "catalog_number": "LE F-65390",
+    "catalog_number_raw": "65390",
+    "scientific_name": "Ustilago heleochloae Vánky & Gönczöl",
+    "type_status": "Isotype"
+  },
+  "LE F-65978.JPG": {
+    "catalog_number": "LE F-65978",
+    "catalog_number_raw": "65978",
+    "scientific_name": "Ustilago carbo var. lepturi Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-65987.JPG": {
+    "catalog_number": "LE F-65987",
+    "catalog_number_raw": "65987",
+    "scientific_name": "Ustilago carbo var. lepturi Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-66284.JPG": {
+    "catalog_number": "LE F-66284",
+    "catalog_number_raw": "66284",
+    "scientific_name": "Ustilago michnoana Lavrov",
+    "type_status": "Type"
+  },
+  "LE F-66285.JPG": {
+    "catalog_number": "LE F-66285",
+    "catalog_number_raw": "66285",
+    "scientific_name": "Ustilago michnoana Lavrov",
+    "type_status": "Type"
+  },
+  "LE F-66326.JPG": {
+    "catalog_number": "LE F-66326",
+    "catalog_number_raw": "66326",
+    "scientific_name": "Ustilago neglecta Niessl",
+    "type_status": "Type"
+  },
+  "LE F-66368.JPG": {
+    "catalog_number": "LE F-66368",
+    "catalog_number_raw": "66368",
+    "scientific_name": "Ustilago neglecta Niessl",
+    "type_status": "Type"
+  },
+  "LE F-66384.JPG": {
+    "catalog_number": "LE F-66384",
+    "catalog_number_raw": "66384",
+    "scientific_name": "Ustilago nervisequia Tranzschel",
+    "type_status": "Type"
+  },
+  "LE F-66386.JPG": {
+    "catalog_number": "LE F-66386",
+    "catalog_number_raw": "66386",
+    "scientific_name": "Ustilago nervisequia Tranzschel",
+    "type_status": "Type"
+  },
+  "LE F-66725.JPG": {
+    "catalog_number": "LE F-66725",
+    "catalog_number_raw": "66725",
+    "scientific_name": "Ustilago paradoxa Syd., P. Syd. & E.J. Butler",
+    "type_status": "Type"
+  },
+  "LE F-66727.JPG": {
+    "catalog_number": "LE F-66727",
+    "catalog_number_raw": "66727",
+    "scientific_name": "Ustilago parlatorei A.A. Fisch. Waldh.",
+    "type_status": "Type"
+  },
+  "LE F-66904.JPG": {
+    "catalog_number": "LE F-66904",
+    "catalog_number_raw": "66904",
+    "scientific_name": "Ustilago rabenhorstiana J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-66905.JPG": {
+    "catalog_number": "LE F-66905",
+    "catalog_number_raw": "66905",
+    "scientific_name": "Ustilago rabenhorstiana J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-66923.JPG": {
+    "catalog_number": "LE F-66923",
+    "catalog_number_raw": "66923",
+    "scientific_name": "Ustilago rabenhorstiana J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-66924.JPG": {
+    "catalog_number": "LE F-66924",
+    "catalog_number_raw": "66924",
+    "scientific_name": "Ustilago rabenhorstiana J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-66927.JPG": {
+    "catalog_number": "LE F-66927",
+    "catalog_number_raw": "66927",
+    "scientific_name": "Ustilago reiliana J.G. Kühn f. Sorghi saccharati J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-66946.JPG": {
+    "catalog_number": "LE F-66946",
+    "catalog_number_raw": "66946",
+    "scientific_name": "Ustilago reiliana J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-66949.JPG": {
+    "catalog_number": "LE F-66949",
+    "catalog_number_raw": "66949",
+    "scientific_name": "Ustilago reiliana J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-67004.JPG": {
+    "catalog_number": "LE F-67004",
+    "catalog_number_raw": "67004",
+    "scientific_name": "Ustilago reiliana J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-67131.JPG": {
+    "catalog_number": "LE F-67131",
+    "catalog_number_raw": "67131",
+    "scientific_name": "Ustilago intermedia J. Schröt.",
+    "type_status": "Type"
+  },
+  "LE F-67136.JPG": {
+    "catalog_number": "LE F-67136",
+    "catalog_number_raw": "67136",
+    "scientific_name": "Ustilago schweinfurthiana Thüm.",
+    "type_status": "Type"
+  },
+  "LE F-67159.JPG": {
+    "catalog_number": "LE F-67159",
+    "catalog_number_raw": "67159",
+    "scientific_name": "Ustilago scolymi Roum. & Trab. ex Juel",
+    "type_status": "Type"
+  },
+  "LE F-67290.JPG": {
+    "catalog_number": "LE F-67290",
+    "catalog_number_raw": "67290",
+    "scientific_name": "Ustilago pallida Lagerh.",
+    "type_status": "Type"
+  },
+  "LE F-67371_1.JPG": {
+    "catalog_number": "LE F-67371",
+    "catalog_number_raw": "67371",
+    "scientific_name": "Ustilago tulasnei J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-67371_2.JPG": {
+    "catalog_number": "LE F-67371",
+    "catalog_number_raw": "67371",
+    "scientific_name": "Ustilago tulasnei J.G. Kühn",
+    "type_status": "Type"
+  },
+  "LE F-68068.JPG": {
+    "catalog_number": "LE F-68068",
+    "catalog_number_raw": "68068",
+    "scientific_name": "Ustilago tuberculata Golovin",
+    "type_status": "Type"
+  },
+  "LE F-68603.JPG": {
+    "catalog_number": "LE F-68603",
+    "catalog_number_raw": "68603",
+    "scientific_name": "Urocystis bulbocodii Vánky",
+    "type_status": "Topotype"
+  },
+  "LE F-68604.JPG": {
+    "catalog_number": "LE F-68604",
+    "catalog_number_raw": "68604",
+    "scientific_name": "Urocystis leersiae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-113259.JPG": {
+    "catalog_number": "LE F-113259",
+    "catalog_number_raw": "113259",
+    "scientific_name": "Ustilago andropogonis-hirtifolii Henn.",
+    "type_status": "Type"
+  },
+  "LE F-113260.JPG": {
+    "catalog_number": "LE F-113260",
+    "catalog_number_raw": "113260",
+    "scientific_name": "Ustilago andropogonis-hirtifolii Henn.",
+    "type_status": "Type"
+  },
+  "LE F-198013.JPG": {
+    "catalog_number": "LE F-198013",
+    "catalog_number_raw": "198013",
+    "scientific_name": "Entyloma parietariae M.N. Kuzn. & Schwarzman",
+    "type_status": "Isotype"
+  },
+  "LE F-198014.JPG": {
+    "catalog_number": "LE F-198014",
+    "catalog_number_raw": "198014",
+    "scientific_name": "Tuburcinia tranzscheliana Lavrov",
+    "type_status": "Type"
+  },
+  "LE F-198015.JPG": {
+    "catalog_number": "LE F-198015",
+    "catalog_number_raw": "198015",
+    "scientific_name": "Tuburcinia pacifica Lavrov",
+    "type_status": "Type"
+  },
+  "LE F-198016.JPG": {
+    "catalog_number": "LE F-198016",
+    "catalog_number_raw": "198016",
+    "scientific_name": "Tuburcinia polygonati Lavrov",
+    "type_status": "Type"
+  },
+  "LE F-198017.JPG": {
+    "catalog_number": "LE F-198017",
+    "catalog_number_raw": "198017",
+    "scientific_name": "Ustilago pospelovii Uljan.",
+    "type_status": "Type"
+  },
+  "LE F-198018.JPG": {
+    "catalog_number": "LE F-198018",
+    "catalog_number_raw": "198018",
+    "scientific_name": "Sphacelotheca polygoni-alpini Cruchet",
+    "type_status": "Type"
+  },
+  "LE F-198019.JPG": {
+    "catalog_number": "LE F-198019",
+    "catalog_number_raw": "198019",
+    "scientific_name": "Ustilago vuyckii Oudem. & Beij.",
+    "type_status": "Type"
+  },
+  "LE F-198020.JPG": {
+    "catalog_number": "LE F-198020",
+    "catalog_number_raw": "198020",
+    "scientific_name": "Ustilago trebouxii Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-198021.JPG": {
+    "catalog_number": "LE F-198021",
+    "catalog_number_raw": "198021",
+    "scientific_name": "Ustilago dregeana Tul. & C. Tul.",
+    "type_status": "Type"
+  },
+  "LE F-198023.JPG": {
+    "catalog_number": "LE F-198023",
+    "catalog_number_raw": "198023",
+    "scientific_name": "Ustilago michnoana Lavrov",
+    "type_status": "Holotype"
+  },
+  "LE F-198070.JPG": {
+    "catalog_number": "LE F-198070",
+    "catalog_number_raw": "198070",
+    "scientific_name": "Ustilago shastensis Zundel",
+    "type_status": "Topotype"
+  },
+  "LE F-198080.JPG": {
+    "catalog_number": "LE F-198080",
+    "catalog_number_raw": "198080",
+    "scientific_name": "Doassansia epilobii Farl.",
+    "type_status": "Topotype"
+  },
+  "LE F-199377.JPG": {
+    "catalog_number": "LE F-199377",
+    "catalog_number_raw": "199377",
+    "scientific_name": "Cintractia oreoboli Vánky & McKenzie",
+    "type_status": "Isotype"
+  },
+  "LE F-199428.JPG": {
+    "catalog_number": "LE F-199428",
+    "catalog_number_raw": "199428",
+    "scientific_name": "Ustilago longiseti Vánky & Oberw.",
+    "type_status": "Isotype"
+  },
+  "LE F-199431.JPG": {
+    "catalog_number": "LE F-199431",
+    "catalog_number_raw": "199431",
+    "scientific_name": "Sporisorium pseudechinolaenae Vánky & C. Menge",
+    "type_status": "Isotype"
+  },
+  "LE F-199432.JPG": {
+    "catalog_number": "LE F-199432",
+    "catalog_number_raw": "199432",
+    "scientific_name": "Sporisorium themedae-arguentis Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-199435.JPG": {
+    "catalog_number": "LE F-199435",
+    "catalog_number_raw": "199435",
+    "scientific_name": "Sporisorium tripogonis Gandhe, N.D. Sharma & Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-199437.JPG": {
+    "catalog_number": "LE F-199437",
+    "catalog_number_raw": "199437",
+    "scientific_name": "Tilletia savilei Gandhe & Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-199441.JPG": {
+    "catalog_number": "LE F-199441",
+    "catalog_number_raw": "199441",
+    "scientific_name": "Tolyposporium rhynchosporae-cephalotis Vánky & T. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-199461.JPG": {
+    "catalog_number": "LE F-199461",
+    "catalog_number_raw": "199461",
+    "scientific_name": "Ustilago onopordi Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-199473.JPG": {
+    "catalog_number": "LE F-199473",
+    "catalog_number_raw": "199473",
+    "scientific_name": "Ustilago egenula Syd., P. Syd. & E.J. Butler",
+    "type_status": "Isotype"
+  },
+  "LE F-199487.JPG": {
+    "catalog_number": "LE F-199487",
+    "catalog_number_raw": "199487",
+    "scientific_name": "Ustilago trichophora (Link) Kunze",
+    "type_status": "Topotype"
+  },
+  "LE F-199524.JPG": {
+    "catalog_number": "LE F-199524",
+    "catalog_number_raw": "199524",
+    "scientific_name": "Sporisorium dimeriae-ornithopodae Vánky & C. Menge",
+    "type_status": "Isotype"
+  },
+  "LE F-199546.JPG": {
+    "catalog_number": "LE F-199546",
+    "catalog_number_raw": "199546",
+    "scientific_name": "Neovossia sumatii S.D. Patil & Gandhe",
+    "type_status": "Topotype"
+  },
+  "LE F-200589.JPG": {
+    "catalog_number": "LE F-200589",
+    "catalog_number_raw": "200589",
+    "scientific_name": "Ustilago tricholaenae Henn.",
+    "type_status": "Type"
+  },
+  "LE F-201401.JPG": {
+    "catalog_number": "LE F-201401",
+    "catalog_number_raw": "201401",
+    "scientific_name": "Tolyposporium megaglomerulosum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201402.JPG": {
+    "catalog_number": "LE F-201402",
+    "catalog_number_raw": "201402",
+    "scientific_name": "Tolyposporium gymnoschoeni Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201403.JPG": {
+    "catalog_number": "LE F-201403",
+    "catalog_number_raw": "201403",
+    "scientific_name": "Ustilago triodiae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201404.JPG": {
+    "catalog_number": "LE F-201404",
+    "catalog_number_raw": "201404",
+    "scientific_name": "Tolyposporium tetrariae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201405.JPG": {
+    "catalog_number": "LE F-201405",
+    "catalog_number_raw": "201405",
+    "scientific_name": "Tolyposporium gahniae Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201407.JPG": {
+    "catalog_number": "LE F-201407",
+    "catalog_number_raw": "201407",
+    "scientific_name": "Tolyposporium schoeni Vánky & McKenzie",
+    "type_status": "Isotype"
+  },
+  "LE F-201408.JPG": {
+    "catalog_number": "LE F-201408",
+    "catalog_number_raw": "201408",
+    "scientific_name": "Sporisorium themedae-cymbariae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201409.JPG": {
+    "catalog_number": "LE F-201409",
+    "catalog_number_raw": "201409",
+    "scientific_name": "Ustilago xerochloae Vánky & R.G. Shivas",
+    "type_status": "Isotype"
+  },
+  "LE F-201410.JPG": {
+    "catalog_number": "LE F-201410",
+    "catalog_number_raw": "201410",
+    "scientific_name": "Tolyposporium evandrae Websdane & Vánky",
+    "type_status": "Topotype"
+  },
+  "LE F-201411.JPG": {
+    "catalog_number": "LE F-201411",
+    "catalog_number_raw": "201411",
+    "scientific_name": "Heterotolyposporium lepidospermatis Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201413.JPG": {
+    "catalog_number": "LE F-201413",
+    "catalog_number_raw": "201413",
+    "scientific_name": "Macalpinomyces eragrostiellae Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201414.JPG": {
+    "catalog_number": "LE F-201414",
+    "catalog_number_raw": "201414",
+    "scientific_name": "Sporisorium trachypogonis-plumosi Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201415.JPG": {
+    "catalog_number": "LE F-201415",
+    "catalog_number_raw": "201415",
+    "scientific_name": "Oberwinkleria anulata Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201416.JPG": {
+    "catalog_number": "LE F-201416",
+    "catalog_number_raw": "201416",
+    "scientific_name": "Sporisorium amaurae Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201418.JPG": {
+    "catalog_number": "LE F-201418",
+    "catalog_number_raw": "201418",
+    "scientific_name": "Farysia corniculata Vánky",
+    "type_status": "Topotype"
+  },
+  "LE F-201419.JPG": {
+    "catalog_number": "LE F-201419",
+    "catalog_number_raw": "201419",
+    "scientific_name": "Tilletia polypogonis Vánky & N.D. Sharma",
+    "type_status": "Isotype"
+  },
+  "LE F-201420.JPG": {
+    "catalog_number": "LE F-201420",
+    "catalog_number_raw": "201420",
+    "scientific_name": "Anthracoidea altiphila Vánky & M. Piepenbr.",
+    "type_status": "Isotype"
+  },
+  "LE F-201421.JPG": {
+    "catalog_number": "LE F-201421",
+    "catalog_number_raw": "201421",
+    "scientific_name": "Dermatosorus cyperi Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201422.JPG": {
+    "catalog_number": "LE F-201422",
+    "catalog_number_raw": "201422",
+    "scientific_name": "Anthracoidea altiphila Vánky & M. Piepenbr.",
+    "type_status": "Paratype"
+  },
+  "LE F-201423.JPG": {
+    "catalog_number": "LE F-201423",
+    "catalog_number_raw": "201423",
+    "scientific_name": "Anthracoidea unciniae Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-201575.JPG": {
+    "catalog_number": "LE F-201575",
+    "catalog_number_raw": "201575",
+    "scientific_name": "Exobasidium symploci-fasciculatae Racib.",
+    "type_status": "Isotype"
+  },
+  "LE F-207932.JPG": {
+    "catalog_number": "LE F-207932",
+    "catalog_number_raw": "207932",
+    "scientific_name": "Entyloma diastateae M. Piepenbr.",
+    "type_status": "Isotype"
+  },
+  "LE F-214022.JPG": {
+    "catalog_number": "LE F-214022",
+    "catalog_number_raw": "214022",
+    "scientific_name": "Macalpinomyces tristachyae Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214026.JPG": {
+    "catalog_number": "LE F-214026",
+    "catalog_number_raw": "214026",
+    "scientific_name": "Macalpinomyces trichopterygis Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214028.JPG": {
+    "catalog_number": "LE F-214028",
+    "catalog_number_raw": "214028",
+    "scientific_name": "Entyloma zinniae Syd.",
+    "type_status": "Topotype"
+  },
+  "LE F-214029.JPG": {
+    "catalog_number": "LE F-214029",
+    "catalog_number_raw": "214029",
+    "scientific_name": "Aurantiosporium marisci Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214030.JPG": {
+    "catalog_number": "LE F-214030",
+    "catalog_number_raw": "214030",
+    "scientific_name": "Burrillia sagittariae Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214036.JPG": {
+    "catalog_number": "LE F-214036",
+    "catalog_number_raw": "214036",
+    "scientific_name": "Sporisorium iseilematis-vaginiflori Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214040.JPG": {
+    "catalog_number": "LE F-214040",
+    "catalog_number_raw": "214040",
+    "scientific_name": "Schizonella intercedens Vánky & A. Nagler",
+    "type_status": "Isotype"
+  },
+  "LE F-214042.JPG": {
+    "catalog_number": "LE F-214042",
+    "catalog_number_raw": "214042",
+    "scientific_name": "Tolyposporium gymnoschoeni Vánky & C. Vánky",
+    "type_status": "Paratype"
+  },
+  "LE F-214044.JPG": {
+    "catalog_number": "LE F-214044",
+    "catalog_number_raw": "214044",
+    "scientific_name": "Mundkurella schefflerae Vánky, C. Vánky & McKenzie",
+    "type_status": "Isotype"
+  },
+  "LE F-214045.JPG": {
+    "catalog_number": "LE F-214045",
+    "catalog_number_raw": "214045",
+    "scientific_name": "Melanotaenium indicum Vánky, M.S. Patil & N.D. Sharma",
+    "type_status": "Paratype"
+  },
+  "LE F-214049.JPG": {
+    "catalog_number": "LE F-214049",
+    "catalog_number_raw": "214049",
+    "scientific_name": "Tolyposporium megaglomerulosum Vánky",
+    "type_status": "Paratype"
+  },
+  "LE F-214052.JPG": {
+    "catalog_number": "LE F-214052",
+    "catalog_number_raw": "214052",
+    "scientific_name": "Ustilago drakensbergiana Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214054.JPG": {
+    "catalog_number": "LE F-214054",
+    "catalog_number_raw": "214054",
+    "scientific_name": "Ustilago dregeanoides Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214059.JPG": {
+    "catalog_number": "LE F-214059",
+    "catalog_number_raw": "214059",
+    "scientific_name": "Ustanciosporium rhynchosporae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214060.JPG": {
+    "catalog_number": "LE F-214060",
+    "catalog_number_raw": "214060",
+    "scientific_name": "Ustilago dactyloctenii Henn.",
+    "type_status": "Isoneotype"
+  },
+  "LE F-214065.JPG": {
+    "catalog_number": "LE F-214065",
+    "catalog_number_raw": "214065",
+    "scientific_name": "Sporisorium pole-evansii Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214068.JPG": {
+    "catalog_number": "LE F-214068",
+    "catalog_number_raw": "214068",
+    "scientific_name": "Sporisorium loudetiae-pedicellatae Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214074.JPG": {
+    "catalog_number": "LE F-214074",
+    "catalog_number_raw": "214074",
+    "scientific_name": "Sporisorium hwangense Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214086.JPG": {
+    "catalog_number": "LE F-214086",
+    "catalog_number_raw": "214086",
+    "scientific_name": "Macalpinomyces simplex Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214087.JPG": {
+    "catalog_number": "LE F-214087",
+    "catalog_number_raw": "214087",
+    "scientific_name": "Sporisorium sehimicola Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214089.JPG": {
+    "catalog_number": "LE F-214089",
+    "catalog_number_raw": "214089",
+    "scientific_name": "Ustilago austro-africana Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214090.JPG": {
+    "catalog_number": "LE F-214090",
+    "catalog_number_raw": "214090",
+    "scientific_name": "Sporisorium fastigiatum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214091.JPG": {
+    "catalog_number": "LE F-214091",
+    "catalog_number_raw": "214091",
+    "scientific_name": "Pseudodoassansia hydrocleydis Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214092.JPG": {
+    "catalog_number": "LE F-214092",
+    "catalog_number_raw": "214092",
+    "scientific_name": "Restiosporium meneyae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214094.JPG": {
+    "catalog_number": "LE F-214094",
+    "catalog_number_raw": "214094",
+    "scientific_name": "Urocystis alstroemeriae Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214102.JPG": {
+    "catalog_number": "LE F-214102",
+    "catalog_number_raw": "214102",
+    "scientific_name": "Ustilago chloridis Vánky, C. Vánky & R.G. Shivas",
+    "type_status": "Isotype"
+  },
+  "LE F-214106.JPG": {
+    "catalog_number": "LE F-214106",
+    "catalog_number_raw": "214106",
+    "scientific_name": "Sporisorium nervosum Vánky, C. Vánky & R.G. Shivas",
+    "type_status": "Isotype"
+  },
+  "LE F-214108.JPG": {
+    "catalog_number": "LE F-214108",
+    "catalog_number_raw": "214108",
+    "scientific_name": "Moreaua fimbristylidis Vánky & R.G. Shivas",
+    "type_status": "Isotype"
+  },
+  "LE F-214109.JPG": {
+    "catalog_number": "LE F-214109",
+    "catalog_number_raw": "214109",
+    "scientific_name": "Tilletia whiteochloae R.G. Shivas & Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214110.JPG": {
+    "catalog_number": "LE F-214110",
+    "catalog_number_raw": "214110",
+    "scientific_name": "Cintractia lipocarphae Vánky, C. Vánky & R.G. Shivas",
+    "type_status": "Isotype"
+  },
+  "LE F-214126.JPG": {
+    "catalog_number": "LE F-214126",
+    "catalog_number_raw": "214126",
+    "scientific_name": "Sporisorium inopinatum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214134.JPG": {
+    "catalog_number": "LE F-214134",
+    "catalog_number_raw": "214134",
+    "scientific_name": "Urocystis pseudoanemones Denchev, Kakish. & Y. Harada",
+    "type_status": "Topotype"
+  },
+  "LE F-214141.JPG": {
+    "catalog_number": "LE F-214141",
+    "catalog_number_raw": "214141",
+    "scientific_name": "Restiosporium dapsilanthi Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214146.JPG": {
+    "catalog_number": "LE F-214146",
+    "catalog_number_raw": "214146",
+    "scientific_name": "Sporisorium cymbicum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214147.JPG": {
+    "catalog_number": "LE F-214147",
+    "catalog_number_raw": "214147",
+    "scientific_name": "Sporisorium tristachyae-nodiglumis Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214148.JPG": {
+    "catalog_number": "LE F-214148",
+    "catalog_number_raw": "214148",
+    "scientific_name": "Sporisorium sphacelatum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214149.JPG": {
+    "catalog_number": "LE F-214149",
+    "catalog_number_raw": "214149",
+    "scientific_name": "Restiosporium baloskionis Vánky & R.G. Shivas",
+    "type_status": "Isotype"
+  },
+  "LE F-214152.JPG": {
+    "catalog_number": "LE F-214152",
+    "catalog_number_raw": "214152",
+    "scientific_name": "Aurantiosporium scleriae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214153.JPG": {
+    "catalog_number": "LE F-214153",
+    "catalog_number_raw": "214153",
+    "scientific_name": "Macalpinomyces leptocarydionis Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214157.JPG": {
+    "catalog_number": "LE F-214157",
+    "catalog_number_raw": "214157",
+    "scientific_name": "Macalpinomyces nodiglumis Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214160.JPG": {
+    "catalog_number": "LE F-214160",
+    "catalog_number_raw": "214160",
+    "scientific_name": "Macalpinomyces pogonarthriae Vánky & C. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214163.JPG": {
+    "catalog_number": "LE F-214163",
+    "catalog_number_raw": "214163",
+    "scientific_name": "Ustilago mauritiana Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214164.JPG": {
+    "catalog_number": "LE F-214164",
+    "catalog_number_raw": "214164",
+    "scientific_name": "Doassansiopsis nymphoides Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214166.JPG": {
+    "catalog_number": "LE F-214166",
+    "catalog_number_raw": "214166",
+    "scientific_name": "Sporisorium australasiaticum Vánky & R.G. Shivas",
+    "type_status": "Isotype"
+  },
+  "LE F-214168.JPG": {
+    "catalog_number": "LE F-214168",
+    "catalog_number_raw": "214168",
+    "scientific_name": "Sporisorium schizachyrii Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-214169.JPG": {
+    "catalog_number": "LE F-214169",
+    "catalog_number_raw": "214169",
+    "scientific_name": "Macalpinomyces magicus Vánky & T. Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227001.JPG": {
+    "catalog_number": "LE F-227001",
+    "catalog_number_raw": "227001",
+    "scientific_name": "Anthracoidea blanda Vánky & H. Alexander",
+    "type_status": "Isotype"
+  },
+  "LE F-227002.JPG": {
+    "catalog_number": "LE F-227002",
+    "catalog_number_raw": "227002",
+    "scientific_name": "Ustilago circumdata Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227004.JPG": {
+    "catalog_number": "LE F-227004",
+    "catalog_number_raw": "227004",
+    "scientific_name": "Sporisorium ustilaginiforme Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227005.JPG": {
+    "catalog_number": "LE F-227005",
+    "catalog_number_raw": "227005",
+    "scientific_name": "Sporisorium panicicola Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227006.JPG": {
+    "catalog_number": "LE F-227006",
+    "catalog_number_raw": "227006",
+    "scientific_name": "Ustilago panici-virgati Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227008.JPG": {
+    "catalog_number": "LE F-227008",
+    "catalog_number_raw": "227008",
+    "scientific_name": "Sporisorium panici-fasciculati Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227009.JPG": {
+    "catalog_number": "LE F-227009",
+    "catalog_number_raw": "227009",
+    "scientific_name": "Macalpinomyces panici Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227010.JPG": {
+    "catalog_number": "LE F-227010",
+    "catalog_number_raw": "227010",
+    "scientific_name": "Tilletia microtuberculata Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227011.JPG": {
+    "catalog_number": "LE F-227011",
+    "catalog_number_raw": "227011",
+    "scientific_name": "Lundquistia mexicana Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227012.JPG": {
+    "catalog_number": "LE F-227012",
+    "catalog_number_raw": "227012",
+    "scientific_name": "Entyloma siegesbeckiae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227013.JPG": {
+    "catalog_number": "LE F-227013",
+    "catalog_number_raw": "227013",
+    "scientific_name": "Ustilago cynodonticola Vánky, R.G. Shivas & A. Witt",
+    "type_status": "Isotype"
+  },
+  "LE F-227014.JPG": {
+    "catalog_number": "LE F-227014",
+    "catalog_number_raw": "227014",
+    "scientific_name": "Macalpinomyces tuberculatus Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227015.JPG": {
+    "catalog_number": "LE F-227015",
+    "catalog_number_raw": "227015",
+    "scientific_name": "Jamesdicksonia festucae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227016.JPG": {
+    "catalog_number": "LE F-227016",
+    "catalog_number_raw": "227016",
+    "scientific_name": "Sporisorium eriochrysis Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227017.JPG": {
+    "catalog_number": "LE F-227017",
+    "catalog_number_raw": "227017",
+    "scientific_name": "Macalpinomyces ugandensis Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227018.JPG": {
+    "catalog_number": "LE F-227018",
+    "catalog_number_raw": "227018",
+    "scientific_name": "Sporisorium absconditum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227019.JPG": {
+    "catalog_number": "LE F-227019",
+    "catalog_number_raw": "227019",
+    "scientific_name": "Microbotryum silybum Vánky & Berner",
+    "type_status": "Isotype"
+  },
+  "LE F-227020.JPG": {
+    "catalog_number": "LE F-227020",
+    "catalog_number_raw": "227020",
+    "scientific_name": "Sporisorium dacryoideum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-227029.JPG": {
+    "catalog_number": "LE F-227029",
+    "catalog_number_raw": "227029",
+    "scientific_name": "Sporisorium cymbicum Vánky",
+    "type_status": "Paratype"
+  },
+  "LE F-227030.JPG": {
+    "catalog_number": "LE F-227030",
+    "catalog_number_raw": "227030",
+    "scientific_name": "Sporisorium cymbicum Vánky",
+    "type_status": "Paratype"
+  },
+  "LE F-227086.JPG": {
+    "catalog_number": "LE F-227086",
+    "catalog_number_raw": "227086",
+    "scientific_name": "Microbotryum silybum Vánky & Berner",
+    "type_status": "Topotype"
+  },
+  "LE F-231961.JPG": {
+    "catalog_number": "LE F-231961",
+    "catalog_number_raw": "231961",
+    "scientific_name": "Restiosporium dapsilanthi Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-232020.JPG": {
+    "catalog_number": "LE F-232020",
+    "catalog_number_raw": "232020",
+    "scientific_name": "Sporisorium cymbicum Vánky",
+    "type_status": "Paratype"
+  },
+  "LE F-262253.JPG": {
+    "catalog_number": "LE F-262253",
+    "catalog_number_raw": "262253",
+    "scientific_name": "Doassansiopsis tomasii Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262258.JPG": {
+    "catalog_number": "LE F-262258",
+    "catalog_number_raw": "262258",
+    "scientific_name": "Macalpinomyces tilletioides Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262259.JPG": {
+    "catalog_number": "LE F-262259",
+    "catalog_number_raw": "262259",
+    "scientific_name": "Ustanciosporium virginianum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262291.JPG": {
+    "catalog_number": "LE F-262291",
+    "catalog_number_raw": "262291",
+    "scientific_name": "Microbotryum afromontanum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262292.JPG": {
+    "catalog_number": "LE F-262292",
+    "catalog_number_raw": "262292",
+    "scientific_name": "Entyloma cosmi Vánky, Horita & Jage",
+    "type_status": "Isotype"
+  },
+  "LE F-262294.JPG": {
+    "catalog_number": "LE F-262294",
+    "catalog_number_raw": "262294",
+    "scientific_name": "Urocystis chifengensis L. Guo & T.Z. Liu",
+    "type_status": "Topotype"
+  },
+  "LE F-262298.JPG": {
+    "catalog_number": "LE F-262298",
+    "catalog_number_raw": "262298",
+    "scientific_name": "Sporisorium penniseticola Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262323.JPG": {
+    "catalog_number": "LE F-262323",
+    "catalog_number_raw": "262323",
+    "scientific_name": "Macalpinomyces sharmae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262326.JPG": {
+    "catalog_number": "LE F-262326",
+    "catalog_number_raw": "262326",
+    "scientific_name": "Moreaua eximiae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262327.JPG": {
+    "catalog_number": "LE F-262327",
+    "catalog_number_raw": "262327",
+    "scientific_name": "Mundkurella japonica Denchev & Kakish.",
+    "type_status": "Isotype"
+  },
+  "LE F-262330.JPG": {
+    "catalog_number": "LE F-262330",
+    "catalog_number_raw": "262330",
+    "scientific_name": "Moreaua scirpi Vánky, C. Vánky, R.G. Shivas & McTaggart",
+    "type_status": "Isotype"
+  },
+  "LE F-262331.JPG": {
+    "catalog_number": "LE F-262331",
+    "catalog_number_raw": "262331",
+    "scientific_name": "Restiosporium flexuosum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262332.JPG": {
+    "catalog_number": "LE F-262332",
+    "catalog_number_raw": "262332",
+    "scientific_name": "Sporisorium pseudosorghi Vánky, R.G. Shivas & Athip.",
+    "type_status": "Isotype"
+  },
+  "LE F-262333.JPG": {
+    "catalog_number": "LE F-262333",
+    "catalog_number_raw": "262333",
+    "scientific_name": "Moreaua capillaceae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262334.JPG": {
+    "catalog_number": "LE F-262334",
+    "catalog_number_raw": "262334",
+    "scientific_name": "Restiosporium eurychordae Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262335.JPG": {
+    "catalog_number": "LE F-262335",
+    "catalog_number_raw": "262335",
+    "scientific_name": "Sporisorium distachyum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262336.JPG": {
+    "catalog_number": "LE F-262336",
+    "catalog_number_raw": "262336",
+    "scientific_name": "Anthracoidea multicaulis Vánky & Salo",
+    "type_status": "Isotype"
+  },
+  "LE F-262337.JPG": {
+    "catalog_number": "LE F-262337",
+    "catalog_number_raw": "262337",
+    "scientific_name": "Cintractia mitchellii Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262338.JPG": {
+    "catalog_number": "LE F-262338",
+    "catalog_number_raw": "262338",
+    "scientific_name": "Ustilago lituana R.G. Shivas, Vánky & Cunningt.",
+    "type_status": "Isotype"
+  },
+  "LE F-262339.JPG": {
+    "catalog_number": "LE F-262339",
+    "catalog_number_raw": "262339",
+    "scientific_name": "Moreaua tothii Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262340.JPG": {
+    "catalog_number": "LE F-262340",
+    "catalog_number_raw": "262340",
+    "scientific_name": "Restiosporium pallentis Vánky & R.G. Shivas",
+    "type_status": "Isotype"
+  },
+  "LE F-262341.JPG": {
+    "catalog_number": "LE F-262341",
+    "catalog_number_raw": "262341",
+    "scientific_name": "Phragmotaenium indicum (Vánky, M.S. Patil & N.D. Sharma) R. Bauer, Begerow, A. Nagler & Oberw.",
+    "type_status": "Topotype"
+  },
+  "LE F-262342.JPG": {
+    "catalog_number": "LE F-262342",
+    "catalog_number_raw": "262342",
+    "scientific_name": "Sporisorium ingoldii Vánky",
+    "type_status": "Paratype"
+  },
+  "LE F-262343.JPG": {
+    "catalog_number": "LE F-262343",
+    "catalog_number_raw": "262343",
+    "scientific_name": "Tilletia setariicola Pavgi & Thirum.",
+    "type_status": "Topotype"
+  },
+  "LE F-262344.JPG": {
+    "catalog_number": "LE F-262344",
+    "catalog_number_raw": "262344",
+    "scientific_name": "Jamesdicksonia ischaemiana (Thirum. & Pavgi) R. Bauer, Begerow, A. Nagler & Oberw.",
+    "type_status": "Topotype"
+  },
+  "LE F-262345.JPG": {
+    "catalog_number": "LE F-262345",
+    "catalog_number_raw": "262345",
+    "scientific_name": "Entyloma cosmi Vánky, Horita & Jage",
+    "type_status": "Paratype"
+  },
+  "LE F-262346.JPG": {
+    "catalog_number": "LE F-262346",
+    "catalog_number_raw": "262346",
+    "scientific_name": "Sporisorium distachyum Vánky",
+    "type_status": "Paratype"
+  },
+  "LE F-262347.JPG": {
+    "catalog_number": "LE F-262347",
+    "catalog_number_raw": "262347",
+    "scientific_name": "Ustanciosporium montagnei (Tul. & C. Tul.) M. Piepenbr., Begerow & Oberw.",
+    "type_status": "Isotype"
+  },
+  "LE F-262348.JPG": {
+    "catalog_number": "LE F-262348",
+    "catalog_number_raw": "262348",
+    "scientific_name": "Doassansiopsis euryales R.A.B. Verma & V. Jha",
+    "type_status": "Isotype"
+  },
+  "LE F-262349.JPG": {
+    "catalog_number": "LE F-262349",
+    "catalog_number_raw": "262349",
+    "scientific_name": "Urocystis achnatheri L. Guo",
+    "type_status": "Paratype"
+  },
+  "LE F-262350.JPG": {
+    "catalog_number": "LE F-262350",
+    "catalog_number_raw": "262350",
+    "scientific_name": "Restiosporium proliferum Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-262530.JPG": {
+    "catalog_number": "LE F-262530",
+    "catalog_number_raw": "262530",
+    "scientific_name": "Sorosporium pedicularis Golovin",
+    "type_status": "Type"
+  },
+  "LE F-314150.JPG": {
+    "catalog_number": "LE F-314150",
+    "catalog_number_raw": "314150",
+    "scientific_name": "Entyloma frondosa Vánky",
+    "type_status": "Isotype"
+  },
+  "LE F-341596.JPG": {
+    "catalog_number": "LE F-341596",
+    "catalog_number_raw": "341596",
+    "scientific_name": "Ustilago kusanoi Syd. & P. Syd.",
+    "type_status": "Type"
+  },
+  "LE F-341597.JPG": {
+    "catalog_number": "LE F-341597",
+    "catalog_number_raw": "341597",
+    "scientific_name": "Ustilago panici-proliferi Henn.",
+    "type_status": "Type"
+  },
+  "LE F-341598.JPG": {
+    "catalog_number": "LE F-341598",
+    "catalog_number_raw": "341598",
+    "scientific_name": "Ustilago panici-proliferi Henn.",
+    "type_status": "Type"
+  },
+  "LE F-343151.JPG": {
+    "catalog_number": "LE F-343151",
+    "catalog_number_raw": "343151",
+    "scientific_name": "Urocystis gageae Kalymb.",
+    "type_status": "Syntype"
+  }
+}

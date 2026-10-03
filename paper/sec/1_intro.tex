@@ -1,0 +1,100 @@
+\section{Introduction}
+\label{sec:intro}
+
+Biological collections are the material foundation of taxonomy and of one of
+the great tasks of the life sciences---documenting the Earth's biodiversity.
+According to Index Herbariorum, the world holds roughly 3\,500 active herbaria
+containing $\sim$398 million physical specimens~\cite{thiers2024ih}. These
+collections underpin systematic, ecological, climatic, and conservation
+research and serve as a verifiable record of the presence of taxa in space and
+time~\cite{davis2023herbarium}. The Komarov Botanical Institute (LE) holds the
+largest herbarium in Russia and the fifth largest worldwide, with more than
+7.3 million specimens accumulated over 300 years; its mycological fund
+($\sim$350\,000 specimens) is the largest fungal collection in the country and
+includes numerous type specimens of Ustilaginales.
+
+\paragraph{The dark-data problem.}
+Despite their scientific value, collection metadata remain ``dark data.'' At
+LE, only $\sim$5\,\% of vascular plants are imaged, the figure for the
+mycological part is below 1\,\%, and structured metadata exist for only
+$\sim$22\,\% of specimens. Globally, the rate of metadata transcription has not
+increased in over a decade and remains the principal bottleneck of
+biodiversity mobilization into open databases~\cite{owen2020nlp}. Manual
+transcription is expensive, slow, and noisy due to the heterogeneity of
+curatorial schools and epochs. The resulting data should follow the FAIR
+principles and biodiversity standards such as Darwin
+Core~\cite{wieczorek2012dwc}.
+
+\paragraph{Why mycological type labels are hard.}
+Our working corpus is the smut-fungi (Ustilaginomycotina, ``Smuts'')
+subcollection of LE: 394 type-specimen images with inventory prefixes
+\texttt{LE~F-*}. A first visual analysis reveals extreme heterogeneity along
+several axes (Tab.~\ref{tab:corpus}): epochs from 1873 to 2009; four languages
+(Latin scientific names, German, English, and Russian including pre-reform
+orthography); four text types (typeset, typewritten, handwritten, mixed);
+diverse date formats; legacy toponyms (e.g.\ ``USSR: Kazachstaniae, Alatau
+Transiliense'') alongside modern DMS coordinates; visually expressed status
+markers (\emph{Isotypus}, \emph{Holotypus} colored stickers); and complex
+layouts (multi-label sheets, barcodes, envelope spreads). Crucially, none of
+the closest prior systems is validated on material of such temporal and
+linguistic breadth, and most target \emph{plant} collections that rely on the
+World Flora Online rather than fungal
+nomenclature~\cite{turnbull2025hespi,wen2025ocrllm}.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Axis & Range / examples \\
+\midrule
+Epochs & 1873--2009 (Sydow 1898; Vánky 1988--96) \\
+Languages & Latin, German, English, Russian (pre-reform) \\
+Text type & typeset, typewritten, handwritten, mixed \\
+Dates & \texttt{20.\,10.\,1898}, \texttt{13.\,VI.\,1946}, \texttt{26.II.1988} \\
+Geography & legacy toponyms; DMS coordinates \\
+Status & Isotypus / Holotypus (colored stickers) \\
+Layout & multi-label sheets, barcodes, envelope spreads \\
+\bottomrule
+\end{tabular}
+\caption{Heterogeneity of the smut-fungi (Smuts) subcollection. This diversity
+is the scientific motivation of our study: it stresses every stage of the
+pipeline, from orientation to handwriting recognition to taxonomic
+normalization.}
+\label{tab:corpus}
+\end{table}
+
+\paragraph{Goal.}
+We aim to build and empirically validate a modular pipeline that extracts
+structured, machine-readable metadata from mycological label images, aligned
+with a 21-field Darwin~Core-compatible schema~\cite{wieczorek2012dwc} extended
+with mycology-specific fields (host plant, type status), with per-field
+confidence and an audit trail suitable for curator review. Our study is
+deliberately incremental: each step is compared against the previous one on the
+same gold set, so that the contribution of every component can be attributed
+quantitatively.
+
+\paragraph{Contributions.}
+\begin{enumerate}[itemsep=1pt,topsep=2pt,leftmargin=1.4em]
+\item A rigorous, reproducible benchmark of \textbf{17 experiments} on a real
+mycological type corpus, from a seven-engine classical OCR ensemble to modern
+VLMs, all evaluated with a single unified metric suite
+(\cref{sec:experiments}).
+\item Evidence that \textbf{domain adaptation dominates architecture}: a LoRA
+adapter (rank~32, $0.5\,\%$ trainable parameters) trained on 310 examples
+raises $F_1$ from $0.807$ (zero-shot VLM) to \textbf{0.972} on the full corpus,
+outscoring 18 stronger or larger models (\cref{sec:results}).
+\item A detailed \textbf{LoRA hyperparameter study} (83 configurations)
+quantifying the effect of learning rate, rank, $\alpha$, epochs, and target
+modules, with a compact recipe.
+\item A practical \textbf{production recipe}: adapter merging plus batched
+inference gives a $5\times$ speedup ($2.77$\,s/image) with no measurable quality
+loss; we report throughput for corpus-scale deployment.
+\item Two carefully designed \textbf{negative results}---a taxonomic-API
+validator is a signal, not an $F_1$ booster, and a naive LLM corrector degrades
+quality---plus a \textbf{cross-model GT audit} that finds 51 likely annotation
+omissions.
+\item A \textbf{generalization test} on 534 unseen \emph{Anthracoidea}
+specimens, confirming a $99.8\,\%$ parse rate and consistent per-field behavior.
+\end{enumerate}

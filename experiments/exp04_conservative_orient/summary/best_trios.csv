@@ -1,0 +1,11 @@
+trio,mean_max_sim,frac_of_oracle,mean_pair_rho
+paddleocr + surya + trocr-printed,0.7956,0.9886,0.5404
+paddleocr + doctr + surya,0.793,0.9853,0.5765
+doctr + surya + trocr-printed,0.7874,0.9784,0.7032
+paddleocr + surya + trocr-handwritten,0.7865,0.9773,0.5099
+surya + trocr-printed + trocr-handwritten,0.7846,0.9748,0.6879
+tesseract + surya + trocr-printed,0.7818,0.9714,0.6181
+easyocr + surya + trocr-printed,0.7816,0.9711,0.6705
+doctr + surya + trocr-handwritten,0.7788,0.9677,0.6767
+paddleocr + easyocr + surya,0.7781,0.9668,0.5773
+tesseract + paddleocr + surya,0.7778,0.9664,0.5484

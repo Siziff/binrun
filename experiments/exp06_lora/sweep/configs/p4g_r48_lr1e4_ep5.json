@@ -1,0 +1,10 @@
+{
+  "run_id": "p4g_r48_lr1e4_ep5",
+  "rank": 48,
+  "lr": 0.0001,
+  "epochs": 5,
+  "dropout": 0.05,
+  "target_modules": "all-linear",
+  "grad_accum": 8,
+  "warmup_ratio": 0.1
+}

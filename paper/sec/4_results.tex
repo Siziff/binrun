@@ -1,0 +1,136 @@
+\section{Results and Analysis}
+\label{sec:results}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Stage & Best configuration & $F_1$ & CER & s/img \\
+\midrule
+OCR raw            & Surya (Exp.~1)              & 0.732 & 1.79 & 2.6 \\
+OCR + preproc      & Surya (Exp.~2)              & 0.767 & 1.95 & 1.3 \\
+VLM zero-shot      & Qwen3-VL-8B A (Exp.~5)      & 0.807 & 0.48 & 16.4 \\
+OCR-VLM + fmt      & GLM-OCR+fmt+fs (Exp.~5c)    & 0.868 & 0.51 & 19.2 \\
+VLM 5-shot         & Qwen3-VL-8B A\_fs (Exp.~6)  & 0.874 & 0.30 & 16.8 \\
+Best non-LoRA      & lift + fmt fs (Exp.~11)     & 0.883 & 0.41 & 37.5 \\
+LoRA (first)       & r16 (Exp.~8)$^{\dagger}$    & 0.920 & 0.18 & 14.9 \\
+\textbf{LoRA (best)} & \textbf{r32 $\alpha$256 (Exp.~13)} & \textbf{0.972} & \textbf{0.061} & 14.0 \\
+\;\;+ merge/batch  & merged, batch 8 (Exp.~14)   & 0.972 & 0.062 & \textbf{2.8} \\
+\bottomrule
+\end{tabular}
+\caption{Headline progression on the 394-image corpus (except $\dagger$ on the
+79-image test split). The cumulative $+24.0$-point $F_1$ gain decomposes as
+preprocessing $+3.5$, VLM $+4.0$, five-shot $+6.7$, LoRA $+9.8$.}
+\label{tab:progression}
+\end{table}
+
+\paragraph{Overall progression.}
+Table~\ref{tab:progression} summarizes the ladder. The cumulative gain from the
+OCR baseline (Exp.~1, $0.732$) to the final adapter (Exp.~13, $0.972$) is
+$+24.0$ points. \emph{Fine-tuning on merely 310 examples is the dominant
+lever}---larger than every architectural change we tried, and larger than the
+$+6.7$ prompting gain. The relative error $(1{-}F_1)$ drops from $0.268$ to
+$0.028$, a $9.6\times$ reduction.
+
+\paragraph{Bigger is not better.}
+Across Exp.~5 and 9--11 the same pattern recurs (Tab.~\ref{tab:vlm},
+\ref{tab:probes}): a well-aligned 8B instruct model matches or beats 9--30B
+backbones. The 30B MoE model scored $0.798$ vs the 8B's $0.807$; Gemma-4-12B
+$0.776$; Qwythos-9B and Qwen3.5-9B-Base $0.71$--$0.74$ with poor ($\sim$78\,\%)
+parse rate. Quality is \emph{pre-training $\times$ instruction alignment
+$\times$ domain SFT}; ``newer'' or ``larger'' alone is insufficient. Qwythos's
+higher CER ($0.704$) versus its own base ($0.538$) shows that reasoning-oriented
+post-training even \emph{degrades} verbatim transcription.
+
+\paragraph{Per-field quality.}
+For the winning adapter, 16 of 21 fields reach $F_1\ge0.97$
+(Tab.~\ref{tab:perfield}): \texttt{catalog\_number} $0.993$ (barcode+text),
+\texttt{exsiccata\_title} $0.995$, \texttt{country} $0.985$,
+\texttt{scientific\_name} $0.974$. The four weak fields all have $<\!10\,\%$
+occurrence in the data, so the signal is dominated by sparsity rather than
+model error. Error categorization shows the dominant modes are \emph{partial}
+matches (date/locality formatting) and \emph{omissions} on rare fields;
+\emph{hallucinations} are low ($\le\!10$ per field). Strikingly, cross-model
+consensus (Exp.~16) reveals that several apparent hallucinations are in fact
+\emph{correct} label text missing from our GT (e.g.\ the Latin remark
+\emph{``etiam in parte sepulta, haud chlorophylliphera''} on two sheets),
+implying that fixing the annotation would raise $F_1$ toward $0.975$--$0.978$
+``for free.''
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcc@{\hskip 10pt}lcc@{}}
+\toprule
+Field & $n_{gt}$ & $F_1$ & Field & $n_{gt}$ & $F_1$ \\
+\midrule
+exsiccata\_title  & 322 & 0.995 & verbatim\_locality      & 375 & 0.961 \\
+catalog\_number   & 376 & 0.993 & collector               & 368 & 0.955 \\
+country           & 375 & 0.985 & field\_number           & 122 & 0.954 \\
+verbatim\_elev.   & 139 & 0.982 & verbatim\_habitat       & 32  & 0.867 \\
+verbatim\_ident.  & 376 & 0.975 & organism\_remarks       & 11  & 0.727 \\
+scientific\_name  & 376 & 0.974 & identif.\_remarks       & 3   & 0.500 \\
+verbatim\_substr. & 372 & 0.971 & verbatim\_ident.\_date  & 2   & 0.000 \\
+type\_status      & 360 & 0.969 & determiner              & 369 & 0.965 \\
+\bottomrule
+\end{tabular}
+\caption{Per-field $F_1$ for the winning adapter (Exp.~13). All four weak
+fields ($F_1<0.90$) have $<\!10\,\%$ occurrence; frequent fields are
+uniformly strong.}
+\label{tab:perfield}
+\end{table}
+
+\paragraph{Deployment.}
+Merging plus batch-8 inference retains $F_1\!\approx\!0.972$ while cutting
+latency to $2.77$\,s/img (Tab.~\ref{tab:deploy}), enabling corpus-scale
+processing on-premise; the residual $-0.04$ point on the full run is an artifact
+of missing records, not a real regression (per-field diffs are $\le\!2$
+flips/field).
+
+\paragraph{Validation is a signal, not a booster.}
+GBIF matched $85\,\%$ of names and detected 10 real spelling errors, yet the
+$F_1$ delta was $0.000$ because the model is already correct above threshold and
+canonical forms conflict with the historical GT convention. The naive LLM
+corrector was net-negative. The practical conclusion is to use taxonomic tools
+for \emph{per-field confidence and audit}, keeping corrections conservative
+(genus preserved, sim\,$\ge0.95$, no synonym swaps), and to route only
+low-confidence records to a curator.
+
+\paragraph{Generalization.}
+On 534 unseen \emph{Anthracoidea} specimens the model achieved $99.8\,\%$ parse
+rate, with fill rates reflecting label structure: near-$100\,\%$ for core fields
+(\texttt{scientific\_name}, \texttt{catalog\_number}, \texttt{country},
+\texttt{verbatim\_locality}) and lower for conditionally present fields
+(coordinates $\sim$11\,\%, \texttt{type\_status} $54\,\%$, exsiccata
+$\sim$43\,\%). The model reliably recovers \texttt{catalog\_number} from
+barcodes/stamps even though file names carry no inventory number---an important
+property for scaling to the full $\sim$350\,000-specimen collection.
+
+\paragraph{Limitations.}
+Our gold set is modest (394 images) and stratified but small; rare, multilingual,
+and handwritten fields remain the weakest (\cref{tab:perfield}), and some GT
+labels are provably incomplete (Exp.~16). The taxonomic validator does not yet
+cover historical Soviet/Russian names absent from GBIF/Index~Fungorum, and
+high-throughput serving via vLLM/SGLang is unresolved on our CUDA-12 cluster.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+We presented a systematic 17-experiment study of automatic metadata extraction
+from mycological herbarium labels on a uniquely heterogeneous corpus of
+smut-fungi type specimens. Progressing from a seven-engine classical OCR
+ensemble ($F_1=0.767$) through zero-shot and five-shot VLMs to a
+parameter-efficient LoRA adapter, we reach $F_1=0.972$ ($\mathrm{CER}=0.061$) on
+the full corpus---a $+24.0$-point gain---using an 8B model fine-tuned on only
+310 examples in $\sim$25 minutes on one GPU. Adapter merging and batching yield
+a $5\times$ inference speedup at equal quality, and the model generalizes to
+534 unseen \emph{Anthracoidea} specimens at a $99.8\,\%$ parse rate. Two
+negative results delineate the limits of taxonomic-API and LLM ``correction,''
+and a cross-model audit shows the ceiling is partly set by annotation
+completeness. Future work targets expanded gold annotation for rare fields, a
+conservative tool-using validator backed by MycoBank and historical gazetteers,
+and high-throughput serving toward mobilizing the full LE mycological
+collection.

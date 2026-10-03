@@ -1,0 +1,52 @@
+image,field,gt,consensus_value,n_agreeing,agreeing_models,all_n_models_predicted
+LE F-198020.JPG,exsiccata_title,<NULL>,Gerbarii O. Trebu,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",2
+LE F-214102.JPG,verbatim_latitude,<NULL>,16°25' S,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-214102.JPG,verbatim_longitude,<NULL>,144°45' E,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-214102.JPG,verbatim_elevation,<NULL>,Alt. c. 520 m,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-22418.JPG,verbatim_elevation,<NULL>,1140 m,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",2
+LE F-22421.JPG,verbatim_collector,<NULL>,D. Sacc.,2,"p5j_r32_lr7e5_ep5_a256,p4g_r16_lr1e4_ep8",3
+LE F-227006.JPG,field_number,<NULL>,5586,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-262338.JPG,field_number,<NULL>,5794,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-262347.JPG,verbatim_latitude,<NULL>,9°10' N,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-262347.JPG,verbatim_longitude,<NULL>,83°23' W,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-262530.JPG,collector,<NULL>,Nikiforova N. M.,2,"p5j_r32_lr7e5_ep5_a256,p4g_r16_lr1e4_ep8",3
+LE F-343151.JPG,verbatim_collector,<NULL>,Б.К. Калымбетов,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-38021.JPG,verbatim_substrate,<NULL>,Carex glareosa,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-38021.JPG,determiner,<NULL>,Zinzerling Y. V.,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4
+LE F-43556.JPG,type_status,<NULL>,Type,3,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",3
+LE F-43557.JPG,type_status,<NULL>,Type,3,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",3
+LE F-43567.JPG,determiner,<NULL>,"Dietel K. W., Neger F. W.",2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",3
+LE F-43579.JPG,verbatim_collection_date,<NULL>,182,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43614.JPG,exsiccata_title,<NULL>,Rabenhorst'sche Fungi europaei,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4
+LE F-43614.JPG,exsiccata_number,<NULL>,2099,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",4
+LE F-43616.JPG,verbatim_collector,<NULL>,Julius Kühn,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43616.JPG,collector,<NULL>,Kühn J. G.,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-43620.JPG,verbatim_collection_date,<NULL>,27/1. 80,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61706.JPG,exsiccata_title,<NULL>,Flora Saxonica,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",2
+LE F-61706.JPG,exsiccata_number,<NULL>,715,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",2
+LE F-61707.JPG,type_status,<NULL>,Type,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",3
+LE F-61722.JPG,verbatim_habitat,<NULL>,in pratis,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61859.JPG,exsiccata_number,<NULL>,375,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61978.JPG,exsiccata_title,<NULL>,Fungi sibirici,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",2
+LE F-62024_1.JPG,type_status,<NULL>,Type,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62024_2.JPG,type_status,<NULL>,Type,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62028_1.JPG,type_status,<NULL>,Type,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",3
+LE F-62028_2.JPG,type_status,<NULL>,Type,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62224.JPG,type_status,<NULL>,Type,2,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",2
+LE F-62935.JPG,collector,<NULL>,Kühn J. G.,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-63058.JPG,verbatim_collector,<NULL>,Tr. Săvulescu,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",2
+LE F-63058.JPG,collector,<NULL>,Săvulescu T.,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",2
+LE F-63638.JPG,type_status,<NULL>,Type,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",3
+LE F-63641.JPG,type_status,<NULL>,Type,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-63654.JPG,type_status,<NULL>,Type,2,"p5j_r32_lr7e5_ep5_a256,p4g_r16_lr1e4_ep8",2
+LE F-63688.JPG,organism_remarks,<NULL>,"etiam in parte sepulta, haud chlorophylliphera",4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-63689.JPG,type_status,<NULL>,Type,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-63689.JPG,organism_remarks,<NULL>,"etiam in parte sepulta, haud chlorophylliphera",4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-64714.JPG,type_status,<NULL>,Type,2,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",2
+LE F-66924.JPG,verbatim_collector,<NULL>,Prof. Dr. Julius Kühn,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-66924.JPG,collector,<NULL>,Kühn J. G.,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-68068.JPG,verbatim_collector,<NULL>,Головин,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-68068.JPG,collector,<NULL>,Golovin P. N.,3,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-68604.JPG,verbatim_latitude,<NULL>,21°38' N,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-68604.JPG,verbatim_longitude,<NULL>,101°18' E,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-68604.JPG,verbatim_elevation,<NULL>,Alt. c. 1300 m.,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4

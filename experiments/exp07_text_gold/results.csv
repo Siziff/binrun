@@ -1,0 +1,15 @@
+rank,tag,family,n,n_missing,CER,WER,sim,rec,sec_per_img
+1,glm-ocr-RAW50,ocr-raw,45,5,0.4100,0.5683,0.6331,1.044,6.70
+2,glm-ocr,ocr-raw,50,0,0.3991,0.5582,0.6299,1.026,6.63
+3,paddleocr-vl,ocr-raw,50,0,0.4260,0.6052,0.5250,1.058,25.96
+4,chandra-md,chandra-md,50,0,0.7899,0.9923,0.4119,1.508,53.44
+5,logics-parsing-v2-RAW50,ocr-raw,49,1,0.6359,0.8545,0.3294,1.077,18.82
+6,logics-parsing-v2,ocr-raw,48,2,0.6555,0.8847,0.3117,1.074,20.44
+7,deepseek-ocr,ocr-raw,50,0,2.8513,3.3394,0.2838,3.050,31.89
+8,Qwen3-VL-30B-A3B-Thinking-A,vlm-json,2,48,0.7050,0.8043,0.2391,0.423,194.62
+9,unlimited-ocr,ocr-raw,49,1,2.7005,4.3673,0.2074,3.145,74.04
+10,got-ocr2,ocr-raw,50,0,2.9168,4.2508,0.1867,2.672,21.78
+11,Qwen3-VL-8B-Instruct-A_fs,vlm-json,50,0,1.8121,1.6677,0.1705,1.548,21.71
+12,InternVL3-8B-A,vlm-json,49,1,1.8249,2.4287,0.1661,1.471,26.99
+13,Qwen3-VL-30B-A3B-Instruct-A,vlm-json,48,2,3.9408,4.2797,0.1481,4.142,189.48
+14,Qwen3-VL-8B-Instruct-A,vlm-json,50,0,8.3613,13.8944,0.1320,8.203,61.05

@@ -1,0 +1,121 @@
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Herbarium digitization pipelines.}
+The closest open system is \textbf{Hespi}~\cite{turnbull2025hespi}, which
+chains two-level object detection (sheet components, then fields within the
+primary label), a text-type classifier, a Tesseract\,+\,TrOCR ensemble,
+cross-checking taxa against World Flora Online and the Australian National
+Species List, and a final GPT-4o correction. On printed labels it reaches
+$92.7\,\%$ text similarity, on handwritten $88.8\,\%$, and on the heterogeneous
+DILLEN set $67.1\,\%$; the LLM correction alone adds $6$--$11$ points.
+Wen~\etal~\cite{wen2025ocrllm} combine PaddleOCR with a text-only LLM and a
+three-tier confidence system over 16 Darwin~Core fields, reaching $95.4\,\%$
+field accuracy on \emph{printed plant} labels with fully local inference---an
+important baseline for whether a multimodal VLM is needed at all. Both target
+vascular plants and rely on botanical authorities, which are useless for fungi.
+Earlier work established that OCR on a cropped label is more accurate than on
+the full sheet, and that Google Cloud Vision achieves only $\sim$24\,\% exact
+matches on Latin names~\cite{owen2020nlp}, motivating cross-checks with
+taxonomic references.
+
+\paragraph{OCR/HTR and document understanding.}
+Modern OCR engines include PaddleOCR, Surya, docTR, and Tesseract~5;
+handwriting recognition traditionally uses TrOCR and, increasingly,
+general-purpose VLMs. OCR-free models such as Donut and GOT-OCR~2.0 read an
+image directly to structured text. General and OCR-specialized VLMs
+(Qwen3-VL, InternVL, Gemma-4, GLM-OCR, and the Datalab family
+chandra/lift/surya) have rapidly become competitive on document understanding.
+Our study evaluates representatives of all these families under a single
+protocol.
+
+\paragraph{Structured extraction, validation, and adaptation.}
+Constrained decoding and schema-guided generation produce syntactically valid
+JSON. For fungi, the authoritative references are Index Fungorum and MycoBank,
+with GBIF as a cross-check~\cite{gbif}. We test a GBIF-based validator and an
+LLM-based corrector, and---unlike prior single-pass pipelines---we compare
+parameter-efficient fine-tuning (LoRA~\cite{hu2022lora}) against prompting and
+architecture changes. To our knowledge this is the first end-to-end study on a
+multilingual mycological \emph{type} corpus of this temporal breadth.
+
+\section{Method}
+\label{sec:method}
+
+\subsection{Task and 21-field schema}
+Given a single label image, the system outputs a JSON record with
+\textbf{21 fields} aligned to Darwin~Core and extended for mycology, grouped as:
+\emph{identifiers} (\texttt{catalog\_number});
+\emph{taxonomy} (\texttt{scientific\_name},
+\texttt{verbatim\_identification}, \texttt{type\_status}, \texttt{determiner},
+\texttt{verbatim\_identification\_date});
+\emph{collection} (\texttt{collector}, \texttt{verbatim\_collector},
+\texttt{field\_number}, \texttt{verbatim\_collection\_date});
+\emph{geography} (\texttt{country}, \texttt{verbatim\_locality},
+\texttt{verbatim\_latitude}, \texttt{verbatim\_longitude},
+\texttt{verbatim\_elevation}, \texttt{verbatim\_habitat});
+\emph{host/substrate} (\texttt{verbatim\_substrate}, \texttt{organism\_remarks},
+\texttt{identification\_remarks}); and
+\emph{series} (\texttt{exsiccata\_title}, \texttt{exsiccata\_number}).
+Both \emph{verbatim} (as-written) and \emph{normalized} variants are requested
+for several fields to disentangle reading from normalization.
+
+\subsection{Modular four-stage pipeline}
+The system is modular so that individual modules can be swapped as better models
+appear (Fig.~\ref{fig:pipeline}). \textbf{(A) Preprocessing / orientation:}
+EXIF transpose, page-level orientation correction via a document-orientation
+classifier, a conservative Grounding-DINO\,+\,docTR fallback for labels
+occupying a small image fraction, and resizing to $\text{max side}=3000$.
+\textbf{(B) OCR ensemble} (optional): classical engines producing tokens with
+confidences. \textbf{(C) VLM normalizer:} a vision-language model consumes the
+image (and optionally OCR text) and emits the 21-field JSON. \textbf{(D)
+Tool-using validator} (optional): taxonomic and geographic APIs verify
+normalized fields. Each stage is evaluated independently, letting us attribute
+quality gains to components. Our final production configuration collapses to
+stage~A followed by a domain-adapted stage~C.
+
+\begin{figure}[t]
+\centering
+\footnotesize
+\setlength{\fboxsep}{4pt}
+\fbox{\parbox{0.92\linewidth}{\centering
+\textbf{Label image (JPG)}\\[2pt]
+$\downarrow$\\[1pt]
+\textbf{(A) Preprocess}: EXIF, orient (PaddleX\,/\,DINO+docTR), resize\\[2pt]
+$\downarrow$\\[1pt]
+\textbf{(B) OCR ensemble} \emph{(optional)}: Paddle\,+\,Surya\,+\,TrOCR\\[2pt]
+$\downarrow$\\[1pt]
+\textbf{(C) VLM normalizer}: Qwen3-VL-8B + LoRA $\rightarrow$ JSON$_{21}$\\[2pt]
+$\downarrow$\\[1pt]
+\textbf{(D) Validator} \emph{(optional)}: GBIF / Index Fungorum\\[2pt]
+$\downarrow$\\[1pt]
+\textbf{Darwin Core record} + per-field confidence + audit log
+}}
+\caption{The modular pipeline. The production system uses stages A$\rightarrow$C
+(domain-adapted); stages B and D are studied as ablations
+(\cref{sec:experiments}).}
+\label{fig:pipeline}
+\end{figure}
+
+\subsection{Ground truth, splits, and metrics}
+The 394 images were manually annotated across all 21 fields (JSONL). For
+fine-tuning we use a stratified split of \textbf{310 train / 79 test} images,
+with 5 additional stratified images reserved as few-shot exemplars and excluded
+from both. A single evaluator scores every experiment identically:
+character/word error rate (CER, WER via jiwer on concatenated fields);
+\emph{sim}, the RapidFuzz \texttt{token\_set\_ratio}; \emph{hard-R}, recall at a
+similarity threshold $\tau=0.85$; \emph{soft-R}, mean per-field similarity where
+present; $F_1$-micro (TP/FP/FN summed over all fields, our headline metric) and
+$F_1$-macro; \emph{parse\_rate}, the fraction of outputs yielding valid JSON;
+and \emph{sec/img}. Unless noted, ``$F_1$'' denotes $F_1$-micro.
+
+\subsection{Fine-tuning setup}
+We apply LoRA~\cite{hu2022lora} to \texttt{Qwen3-VL-8B-Instruct}. Images are
+capped at $\text{max\_pixels}=1024{\times}28{\times}28$
+($\approx$900$\times$900\,px) to avoid out-of-memory from native-resolution
+image tokens ($\sim$6\,580 tokens otherwise). Training uses bf16, gradient
+checkpointing, flash-attention~2, effective batch~8, and a cosine schedule with
+$10\,\%$ warmup on a single H100~80\,GB. The final recipe, selected by the
+sweep of \cref{sec:experiments}, is rank $r=32$, $\alpha=256$ ($8{\times}r$),
+dropout $0.05$, $\text{lr}=7\text{e-}5$, 5 epochs, targeting \emph{all} linear
+projections (attention and MLP). Training runs in $\sim$25\,min; the adapter is
+334\,MB ($43.6$\,M / $8.81$\,B $=0.5\,\%$ trainable parameters).

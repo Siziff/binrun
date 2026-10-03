@@ -1,0 +1,8 @@
+{
+  "engine": "doctr",
+  "n_images": 394,
+  "n_ok": 394,
+  "n_err": 0,
+  "total_seconds": 310.26074639800936,
+  "mean_runtime": 0.7729235180768275
+}

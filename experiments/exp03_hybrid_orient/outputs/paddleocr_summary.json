@@ -1,0 +1,8 @@
+{
+  "engine": "paddleocr",
+  "n_images": 394,
+  "n_ok": 394,
+  "n_err": 0,
+  "total_seconds": 715.2935859840363,
+  "mean_runtime": 1.7950480366823014
+}

@@ -1,0 +1,116 @@
+image,field,gt,consensus_value,sim_gt_consensus,n_agreeing,agreeing_models,all_n_models_predicted
+LE F-198015.JPG,type_status,Type,Isotype,0.727,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-198017.JPG,type_status,Type,Fragment of holotype,0.333,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",3
+LE F-198018.JPG,verbatim_locality,Versant S du Gries entre Bettelmatten Morast (1900 m); alpes valaisannes. [Versant italien du Gries ,Versant S du Gries entre Bettelmatten et Chorast (1900 m); alpes valaisannes,0.848,2,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",2
+LE F-198020.JPG,type_status,Type,Paratype,0.667,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",2
+LE F-201575.JPG,scientific_name,Exobasidium symploci-fasciculatae Racib.,Exobasidium symploci Racib.,0.806,3,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-214028.JPG,verbatim_latitude,25°47'06'' N,"25°47'06"" S",0.783,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-214028.JPG,verbatim_longitude,28°10'38'' W,"28°10'38"" E",0.783,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-214044.JPG,verbatim_elevation,Alt. c. 300 m.,Alt. 10 m.,0.824,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-214060.JPG,type_status,Isoneotype,Paratype,0.444,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-214149.JPG,field_number,5164,5165,0.75,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-22416.JPG,type_status,Isotype,Type,0.727,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-22418.JPG,type_status,Isotype,Type,0.727,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-22421.JPG,determiner,Saccardo D.,Saccardo P. A.,0.842,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-22421.JPG,collector,Saccardo D.,Saccardo P. A.,0.842,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",3
+LE F-227018.JPG,verbatim_longitude,"144°03'21"" E","144°51'58"" E",0.667,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-262347.JPG,field_number,925/6001,925,0.545,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-262349.JPG,type_status,Paratype,Isotype,0.533,3,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-262530.JPG,country,Tajikistan,Russia,0.25,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-314150.JPG,verbatim_collection_date,IV.2001,14.IV.2001,0.824,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-314150.JPG,verbatim_latitude,"43°34'49"" N","16°56'40"" S",0.455,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-314150.JPG,verbatim_longitude,"141°59'04"" E","26°48'12"" E",0.435,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43487.JPG,verbatim_collector,T. Vestergren,T. Vester gren,0.667,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",4
+LE F-43493.JPG,verbatim_collection_date,9.1895,9. 1895,0.615,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43525.JPG,determiner,Schröter J.,Vánky K.,0.211,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43531.JPG,determiner,Smarods J.,Šķipsna J.,0.5,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43532.JPG,determiner,Smarods J.,Lavrov N. N.,0.316,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43577.JPG,verbatim_collection_date,27. Sept. 1877,28. Mai 1877,0.615,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43579.JPG,scientific_name,Ustilago egyptiaca A.A. Fisch. Waldh.,Ustilago aegyptiaca F. de W.,0.769,2,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-43580.JPG,verbatim_collector,Tycho Vestergren,Tycho Vester gren,0.727,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43580.JPG,determiner,Vestergren T.,Vester gren T.,0.667,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-43580.JPG,collector,Vestergren T.,Vester gren T.,0.667,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-43593.JPG,verbatim_collection_date,[NULL],182,0.0,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43596.JPG,verbatim_collector,E. W. D. Holway,P. Dietel,0.417,3,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43596.JPG,verbatim_collection_date,3. 7. 1892,9. 7. 1898,0.8,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43596.JPG,collector,Holway E. W. D.,Dietel P.,0.417,3,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43597.JPG,collector,Khan I.,Inayat Khan,0.727,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43612.JPG,verbatim_substrate,an der cultivirten Form von Panicum sanguinale beobachtet und an mehreren anderen Digitariaarten erz,Panicum sanguinalem,0.538,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43612.JPG,country,Poland,Germany,0.308,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43620.JPG,determiner,Cooke W. B.,Cooke E. A.,0.818,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43620.JPG,collector,Cooke W. B.,Cooke E. A.,0.818,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43621_2.JPG,verbatim_locality,in horto instituti oeconomici Universitatis Halensis,Halle,0.14,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",3
+LE F-43621_2.JPG,verbatim_collection_date,1874,23. April 1875,0.333,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",2
+LE F-43621_2.JPG,scientific_name,Ustilago tulasnei J.G. Kühn,Sorosporium corinum J.G. Kühn,0.5,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",3
+LE F-43622.JPG,verbatim_identification,Ustilago Tragi Săvulescu,Sphacelothe ca Tragi Săvulescu,0.769,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-43622.JPG,scientific_name,Ustilago tragica Vánky,Sphacelotheca tragica Vánky,0.743,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-60833_1.JPG,verbatim_collector,Julius Kühn,Wullschlägel,0.348,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",3
+LE F-60833_1.JPG,verbatim_collection_date,6. Septbr. 1871,[NULL],0.0,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",3
+LE F-60833_2.JPG,verbatim_collector,Julius Kühn,J. K.,0.375,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-60833_2.JPG,verbatim_locality,"auf dem Brockenfelde, einer weiten Hochmoorfläche in der Nähe des Brockenkegels",in horto instituti medici Universitatis Halensis,0.346,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-60833_2.JPG,exsiccata_number,1698,283,0.286,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61085.JPG,type_status,Original material,Type,0.19,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61500.JPG,verbatim_identification,Entyloma primulae Murashk. nov. sp.,Entyloma primulae Woronich.,0.773,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61500.JPG,verbatim_collector,Мурашкинский,Мурашкин,0.8,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61500.JPG,verbatim_collection_date,29.VII.26,29.VI.1926,0.842,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61500.JPG,scientific_name,Entyloma primulae Murashk.,Entyloma primulae Woron.,0.829,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61500.JPG,determiner,Murashkinsky K. E.,Woronichin N. N.,0.387,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61500.JPG,country,Kazakhstan,Kyrgyzstan,0.6,2,"p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61707.JPG,exsiccata_number,42,49,0.5,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61708.JPG,type_status,Authentic,Type,0.308,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-61859.JPG,verbatim_identification,Doassansia ranunculina Davis,Doassansia rammurii davis,0.792,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4
+LE F-61859.JPG,verbatim_collection_date,30.VII.1901,90. 7. 1901,0.364,2,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-61859.JPG,scientific_name,Doassansia ranunculina Davis,Doassansia rammurii Davis,0.792,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4
+LE F-62002.JPG,country,Germany,Sweden,0.308,2,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-62024_1.JPG,scientific_name,Mycosyrinx cissi (DC.) Beck,Mykosyrinx beckii A.A. Fisch. Waldh.,0.603,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4
+LE F-62028_2.JPG,verbatim_collector,Wullschlägel,Poeppig,0.105,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",2
+LE F-62028_2.JPG,country,Dominica,Brazil,0.143,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",3
+LE F-62039.JPG,determiner,Vánky K.,"Vánky K., Gönczöl J.",0.769,3,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62040.JPG,verbatim_collection_date,19.VIII.1957 et 13.VIII.1959,19. VIII. 1957 et 13. VIII. 1959,0.667,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62040.JPG,verbatim_latitude,46°17' N,"46,17 N",0.8,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62040.JPG,verbatim_longitude,25°09' E,"25,09 E",0.8,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62244_1.JPG,type_status,Holotype,Type,0.667,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62244_2.JPG,type_status,Holotype,Type,0.667,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62409.JPG,type_status,Authentic,Type,0.308,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62935.JPG,verbatim_collector,Herrn J. Polomski,Prof. Dr. Julius Kühn,0.316,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62935.JPG,verbatim_locality,"auf Altendorf bei Ratibor, Oberschlesien",Halle,0.178,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62935.JPG,verbatim_collection_date,Juli [1876],22. Juli 1876,0.75,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-62935.JPG,country,Poland,Germany,0.308,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-63058.JPG,verbatim_substrate,Dans les caryopses de Triticum vulgare Host. var. erythrospermum Körn.,In boabele de Triticum vulgare Host var. erythrospermum Körn.,0.849,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",4
+LE F-63411.JPG,verbatim_locality,Antibes. Garten der Villa Thurex,Antibes. Garten des Hauses Rothschild,0.725,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",4
+LE F-63641.JPG,determiner,Bubák F.,Lagerheim G.,0.1,2,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-63654.JPG,verbatim_collector,G. Oertel,E. Bertel,0.556,2,"p5j_r32_lr7e5_ep5_a256,p4g_r16_lr1e4_ep8",4
+LE F-63654.JPG,determiner,Oertel G.,Bertel E.,0.556,2,"p5j_r32_lr7e5_ep5_a256,p4g_r16_lr1e4_ep8",4
+LE F-63654.JPG,collector,Oertel G.,Bertel E.,0.556,2,"p5j_r32_lr7e5_ep5_a256,p4g_r16_lr1e4_ep8",4
+LE F-63688.JPG,verbatim_substrate,"Ad folia Allii magici, etiam in parte sepulta, haud chlorophylliphera",Ad folia Allii magici,0.8,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-63689.JPG,verbatim_substrate,"Ad folia Allii magici, etiam in parte sepulta, haud chlorophylliphera",Ad folia Allii magici,0.8,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-63703.JPG,country,Algeria,Egypt,0.167,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",3
+LE F-64889_1.JPG,verbatim_identification,Ustilago urceolorum mihi (in sensu latiore). forma nova: Scirpi †,Ustilago Scripi †,0.741,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",4
+LE F-64889_1.JPG,verbatim_collector,Julius Kühn,Wullschlägel,0.348,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",3
+LE F-64889_1.JPG,verbatim_locality,"auf dem Brockenfelde, einer weiten Hochmoorfläche in der Nähe des Brockenkegels","Dominica, insula Antillarum prope Charlottetown",0.302,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4
+LE F-64889_1.JPG,verbatim_collection_date,6. Septbr. 1871,[NULL],0.0,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-64889_1.JPG,verbatim_substrate,Scirpus caespitosus var. nemorosus Roth,In Sorghi vulgaris ovariis,0.4,2,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5",4
+LE F-64889_1.JPG,collector,Kühn J. G.,Wullschlägel H. R.,0.357,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",3
+LE F-64889_1.JPG,country,Germany,Dominica,0.267,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4
+LE F-64889_2.JPG,exsiccata_number,1698,283,0.286,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-64889_2.JPG,catalog_number,LE F-64889,LE F-10183,0.6,2,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-65002.JPG,verbatim_locality,auf der zur Herrschaft Schwusen (Niederschlesien) gehörigen Feldflur Attendorf,auf dem Versuchsfelde des landwirthschaftlichen Instituts der Universität Halle,0.484,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-65002.JPG,verbatim_collection_date,Jahre 1859,Jahre 1878,0.8,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-65002.JPG,verbatim_substrate,an Sorghum sacharatum,an Sorghum vulgare cultivirt,0.645,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-65005.JPG,determiner,Kühn J. G.,Kühn F.,0.727,2,"p5j_r32_lr7e5_ep5_a256,p4g_r16_lr1e4_ep8",4
+LE F-65008.JPG,verbatim_locality,auf der zur Herrschaft Schwusen (Niederschlesien) gehörigen Feldflur Attendorf,auf dem Versuchsfelde des landwirthschaftlichen Instituts der Universität Halle,0.484,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-65008.JPG,verbatim_collection_date,Jahre 1859,Jahre 1878,0.8,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-65008.JPG,verbatim_substrate,an Sorghum racharatum,an Sorghum vulgare cultivirt,0.645,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-65375_1.JPG,verbatim_identification,Ustilago grandis Fries. Forma: Phragmitis communis †,Ustilago grandis Fries,0.842,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-65375_2.JPG,verbatim_identification,Ustilago grandis Fries. Forma: Phragmitis communis †,Ustilago grandis Fries,0.842,2,"p5j_r32_lr7e5_ep5_a256,p4g_r16_lr1e4_ep8",4
+LE F-65375_2.JPG,collector,Oertel K. G.,Oertel F. A.,0.833,2,"p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",3
+LE F-66284.JPG,verbatim_locality,"Забайкальская область, Троицкосавск. у. Усть-Киран",Забайкальская область. Окрестности г. Троицкосавска,0.693,3,"p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-66924.JPG,verbatim_identification,Ustilago rabenhorstiana J.G. Kühn,Ustilago Rabenhorstiana Jul. Kühn. Forma: agrestis †,0.821,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-66924.JPG,verbatim_locality,Halle,Auf einem Stoppelfelde des Dorfes Rauscha in der Görlitzer Haide,0.145,3,"p5j_r32_lr7e5_ep5_a256,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-66924.JPG,verbatim_collection_date,23. Febr. 1879,14. September 1878,0.438,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-67159.JPG,verbatim_collector,O. Juel,Oguel,0.5,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4
+LE F-67159.JPG,determiner,Juel O.,Kühn J. G.,0.235,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4
+LE F-67290.JPG,verbatim_collection_date,7. 1896,7.1896,0.615,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-67371_1.JPG,exsiccata_number,1997,1992,0.75,4,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5,p4g_r16_lr1e4_ep8",4
+LE F-67371_2.JPG,verbatim_locality,in horto instituti oeconomici Universitatis Halensis,Halle,0.14,3,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5,p4g_r48_lr1e4_ep5",4
+LE F-67371_2.JPG,verbatim_collection_date,1874,25. April 1875,0.333,2,"p5j_r32_lr7e5_ep5_a256,p4h_r32_lr2e4_ep5",4

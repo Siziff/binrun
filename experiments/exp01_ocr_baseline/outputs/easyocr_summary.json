@@ -1,0 +1,8 @@
+{
+  "engine": "easyocr",
+  "n_images": 394,
+  "n_ok": 190,
+  "n_err": 0,
+  "total_seconds": 482.41918946709484,
+  "mean_runtime": 2.5041249736800397
+}

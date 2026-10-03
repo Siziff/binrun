@@ -1,0 +1,10 @@
+{
+  "run_id": "p3b_r24_lr2e-05",
+  "rank": 24,
+  "lr": 2e-05,
+  "epochs": 3,
+  "dropout": 0.05,
+  "target_modules": "all-linear",
+  "grad_accum": 8,
+  "warmup_ratio": 0.1
+}

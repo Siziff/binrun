@@ -1,0 +1,260 @@
+\section{Experiments}
+\label{sec:experiments}
+
+We report 17 experiments organized as a ladder of increasing capability. All
+use the same 394-image corpus and metric suite; fine-tuning experiments also
+report the 79-image held-out test split. Hardware is $4$--$8\times$ H100 80\,GB.
+
+\subsection{Classical OCR baselines (Exp.\,1--4)}
+\label{sec:ocr}
+We benchmarked seven engines with field extraction by regular expressions only
+(dates, capitalized tokens after \texttt{leg.}/\texttt{det.}, etc.), as in
+historical workflows. Table~\ref{tab:ocr} reports raw (Exp.~1) and
+orientation-preprocessed (Exp.~2) results. Raw Surya is the best single engine
+($F_1=0.732$); page-level orientation correction plus resizing lifts it to
+\textbf{0.767} ($+3.5$ points, sim $+4.6$) and speeds up CPU engines
+$2.5$--$3.3\times$. A rise in CER alongside higher $F_1$ is expected: on
+de-rotated images engines now read long descriptive bulletins (insertions
+inflate CER) while the key fields become correct.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+& \multicolumn{2}{c}{Exp.~1 (raw)} & \multicolumn{2}{c}{Exp.~2 (preproc)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Engine & $F_1$ & sim & $F_1$ & sim \\
+\midrule
+Surya          & 0.732 & 0.703 & \textbf{0.767} & \textbf{0.746} \\
+docTR          & 0.722 & 0.669 & 0.721 & 0.673 \\
+PaddleOCR      & 0.674 & 0.672 & 0.731 & 0.638 \\
+TrOCR-printed  & 0.672 & 0.669 & 0.683 & 0.659 \\
+TrOCR-handwr.  & 0.642 & 0.617 & 0.636 & 0.634 \\
+Tesseract\,5   & 0.620 & 0.627 & 0.639 & 0.620 \\
+EasyOCR        & 0.471 & 0.604 & 0.478 & 0.595 \\
+\bottomrule
+\end{tabular}
+\caption{Classical OCR ensemble (394 images). Orientation preprocessing
+(Exp.~2) gives the largest single-engine gains to Surya ($+3.5$ $F_1$) and
+PaddleOCR ($+5.7$). An aggressive crop-by-default hybrid (Exp.~3) regressed all
+engines by $1$--$6$ points; a conservative hybrid (Exp.~4) recovered Exp.~2
+quality.}
+\label{tab:ocr}
+\end{table}
+
+An \emph{aggressive} hybrid orientation stage (Grounding-DINO crop by default,
+Exp.~3) regressed all engines by $1$--$6$ $F_1$ points, because reading
+previously upside-down bulletins introduced text absent from the (short) ground
+truth. A \emph{conservative} hybrid (Exp.~4), triggering the crop path only
+when the page classifier is unsure ($14.5\,\%$ of files), recovered Exp.~2
+quality and slightly improved the most independent engine (PaddleOCR, $0.740$).
+We therefore feed the preprocessed corpus (stage~A) to all downstream VLM
+stages. Spearman correlation of per-image similarity consistently selected the
+triple \emph{PaddleOCR\,+\,Surya\,+\,TrOCR-printed} as the best OCR ensemble
+($\approx$99\,\% of the oracle upper bound), because PaddleOCR is the most
+independent engine ($\rho\!\le\!0.57$ with others).
+
+\subsection{VLM normalizer (Exp.\,5)}
+\label{sec:vlm}
+We evaluated 18 models in vision-only (mode~A) and vision+OCR-fusion (mode~B)
+settings (Tab.~\ref{tab:vlm}). Zero-shot \texttt{Qwen3-VL-8B-Instruct} reaches
+$F_1=0.807$ (A) $\approx0.808$ (B): \emph{OCR fusion is unnecessary}. Four
+findings stand out. (i) The 8B \emph{Instruct} model matches or beats the 30B
+MoE variant ($0.807$ vs $0.798$). (ii) 4-bit quantization of the 30B model
+regresses by $\sim$4 points. (iii) \emph{Thinking} variants collapse (parse
+rate $50$--$88\,\%$, $15$--$25\,\%$ lower $F_1$, $15$--$20\times$ slower), as
+reasoning consumes the token budget before the JSON block. (iv) Any VLM already
+beats the best single OCR engine by $\sim$4 points.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Model & mode & parse & $F_1$ & CER & s/img \\
+\midrule
+Qwen3-VL-8B-Instruct       & A & 0.98 & 0.807 & 0.48 & 16.4 \\
+Qwen3-VL-8B-Instruct       & B & 0.99 & 0.808 & 0.50 & 14.0 \\
+Qwen3-VL-30B-A3B-Instr.\ (BF16) & B & 0.99 & 0.798 & 0.65 & 33.0 \\
+Qwen3-VL-30B-A3B-Instr.\ (4-bit)& A & 0.93 & 0.769 & 0.88 & 82.4 \\
+InternVL3-8B               & A & 0.99 & 0.668 & 0.60 & 15.4 \\
+Qwen3-VL-8B-\emph{Thinking}& A & 0.57 & 0.544 & 0.74 & 314.3 \\
+\midrule
+\textit{Surya (OCR, Exp.~2)} & -- & -- & \textit{0.767} & \textit{1.95} & \textit{1.3} \\
+\bottomrule
+\end{tabular}
+\caption{VLM normalizer (Exp.~5). Instruct $\gg$ Thinking; 8B $\ge$ 30B;
+vision-only (A) $\approx$ OCR-fusion (B). All strong VLMs beat the OCR
+baseline.}
+\label{tab:vlm}
+\end{table}
+
+\subsection{Two-stage OCR-VLM and few-shot (Exp.\,5b--7)}
+\label{sec:twostage}
+For OCR-VLMs that do not natively emit JSON, we add an 8B \emph{formatter}
+(image\,+\,OCR-markdown\,$\rightarrow$\,JSON). All ``raw'' outputs give $0\,\%$
+parse without the formatter, confirming a two-stage architecture is required
+for non-instruct OCR models. With the formatter, chandra-ocr-2, PaddleOCR-VL,
+DeepSeek-OCR, GOT-OCR2 and GLM-OCR cluster at $F_1=0.79$--$0.87$
+(Tab.~\ref{tab:fewshot}); \textbf{GLM-OCR} (0.9\,B) is the best speed$\times$quality
+OCR-VLM ($0.868$ at $19.2$\,s/img). Adding \textbf{five-shot prompting} is the
+single largest one-step gain in the project: $+6.7$ points, taking Qwen3-VL
+mode~A to \textbf{0.874}, consistently ($+5.8$ to $+6.7$) across four pipelines.
+A separate verbatim ``text-gold'' benchmark (Exp.~7, 50 hand-transcribed
+labels) shows that specialized OCR-VLMs transcribe raw text far better
+(GLM-OCR sim $=0.633$) than field-extraction VLMs (Qwen3-VL sim $=0.13$--$0.17$),
+cleanly separating the two roles: \emph{OCR-VLMs read, VLMs normalize}.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Pipeline & zero-shot $F_1$ & 5-shot $F_1$ & $\Delta$ \\
+\midrule
+Qwen3-VL-8B A (vision-only) & 0.807 & \textbf{0.874} & $+0.067$ \\
+chandra-ocr-2 md+layout+fmt & 0.811 & 0.869 & $+0.058$ \\
+Qwen3-VL-8B B (vision+OCR)  & 0.808 & 0.868 & $+0.060$ \\
+PaddleOCR-VL-1.6 + fmt      & 0.803 & 0.865 & $+0.062$ \\
+GLM-OCR (0.9\,B) + fmt      & --    & 0.868 & -- \\
+\bottomrule
+\end{tabular}
+\caption{Five-shot prompting (Exp.~6, 5c) adds $\sim$6 points regardless of
+whether the pipeline is vision-only or OCR-fusion, JSON-native or
+text-formatted---indicating the failure mode is task under-specification, not
+weak vision.}
+\label{tab:fewshot}
+\end{table}
+
+\subsection{Foundation-model probes (Exp.\,9--11)}
+\label{sec:probes}
+To test whether newer/larger backbones help, we ran \texttt{Qwythos-9B} and
+\texttt{Qwen3.5-9B-Base} on vision (both $F_1\!\le\!0.74$, $\sim$78\,\% parse),
+and benchmarked seven fresh VLMs on the 79-test split (Tab.~\ref{tab:probes}).
+The best non-LoRA alternative is \texttt{lift} (10\,B
+Datalab)\,+\,Qwen3-VL formatter at $F_1=0.883$---the only fresh model to beat
+the 5-shot baseline ($0.878$). Gemma-4-12B ($12$\,B) scores only $0.776$;
+Qwen3.5-9B-Base $0.735$; Qwythos-9B $0.711$. The lesson is unambiguous:
+\emph{production-grade instruction alignment and domain fit beat sheer size or
+novelty}. Notably, surya-ocr-2 (0.7\,B, qwen3\_5) reaches $0.867$---a $+13.5$
+gain over the LSTM-based Surya of Exp.~1.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Model (79-test) & size & $F_1$ & CER & s/img \\
+\midrule
+\textbf{Qwen3-VL-8B + LoRA (Exp.~8)} & 8\,B & \textbf{0.920} & 0.179 & 14.9 \\
+lift + Qwen3-VL fmt (fs)  & 10\,B & 0.883 & 0.412 & 37.5 \\
+Qwen3-VL-8B A\_fs (prod)  & 8\,B & 0.878 & 0.295 & 16.8 \\
+paddleocr-vl-1.6 + fmt fs & 1\,B & 0.875 & 0.369 & 31.0 \\
+chandra-ocr-2 + fmt fs    & 4.5\,B & 0.870 & 0.422 & 45.0 \\
+surya-ocr-2 + fmt fs      & 0.7\,B & 0.867 & 0.319 & 23.3 \\
+unlimited-ocr + fmt fs    & 3\,B & 0.858 & 0.366 & 34.0 \\
+Gemma-4-E4B-it A\_fs      & 8\,B & 0.786 & 0.525 & 14.7 \\
+Gemma-4-12b-it A          & 12\,B & 0.776 & 0.517 & 13.3 \\
+Qwen3.5-9B-Base A         & 9\,B & 0.735 & 0.538 & 43.1 \\
+Qwythos-9B A              & 9\,B & 0.711 & 0.704 & 37.5 \\
+\bottomrule
+\end{tabular}
+\caption{Fresh-VLM benchmark on the 79-test split (Exp.~9--11). No model
+matches LoRA; \texttt{lift} is the best non-LoRA alternative. Larger/newer
+backbones do not help without domain SFT.}
+\label{tab:probes}
+\end{table}
+
+\subsection{LoRA fine-tuning and sweep (Exp.\,8, 12--13)}
+\label{sec:lora}
+A first LoRA (rank~16, lr~2e-5, 3 epochs) reached $F_1=0.920$ on the 79-test,
+already beating the 5-shot baseline by $+4.2$ and zero-shot by $+10.6$ points,
+while cutting CER from $0.398$ to $0.179$. An \textbf{83-configuration
+hyperparameter sweep} ($\sim$60 GPU-hours) mapped the landscape
+(Tab.~\ref{tab:sweep}): $F_1$ rises monotonically with learning rate up to
+$2\text{e-}4$ (then overshoots); MLP projections are essential (attn-only loses
+$\sim$2 points); rank~16 (167\,MB) nearly matches rank~32 (334\,MB); and
+$\alpha=8{\times}r$ is an underrated lever. Of 82 valid runs, 67 ($82\,\%$)
+exceed $F_1\ge0.93$. Evaluating the top-4 adapters on the \emph{full} 394-image
+corpus (Exp.~13) yields the record $F_1=\textbf{0.972}$ ($\mathrm{CER}=0.061$,
+parse $=99.7\,\%$) for $r{=}32,\alpha{=}256,\text{lr}{=}7\text{e-}5,5$ epochs.
+All four adapters scored \emph{higher} on the full corpus than on the small test
+split (e.g.\ $+1.56$ for the winner), and CER roughly halved
+($0.104\!\rightarrow\!0.061$).
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Run & $r$ & lr & $\alpha$ & $F_1^{79}$ & $F_1^{394}$ \\
+\midrule
+\textbf{p5j (prod)} & 32 & 7e-5 & \textbf{256} & 0.9564 & \textbf{0.9720} \\
+p4h & 32 & \textbf{2e-4} & 64 & \textbf{0.9615} & 0.9710 \\
+p4g-r48 & 48 & 1e-4 & 96 & 0.9553 & 0.9694 \\
+p4g-r16 & \textbf{16} & 1e-4 & 32 & 0.9548 & 0.9666 \\
+\midrule
+\multicolumn{6}{@{}l@{}}{\emph{lr progression ($r{=}32$, 5 ep): }} \\
+\multicolumn{6}{@{}l@{}}{\;5e-6$\to$0.83, 2e-5$\to$0.92, 7e-5$\to$0.95, 2e-4$\to$0.96} \\
+\bottomrule
+\end{tabular}
+\caption{LoRA sweep highlights (Exp.~12--13). The winner on the small test
+split ($p4h$) differs from the winner on the full corpus ($p5j$, $\alpha{=}256$).
+Mean $F_1$ over 82 runs $=0.935\pm0.024$.}
+\label{tab:sweep}
+\end{table}
+
+\subsection{Deployment and validation (Exp.\,14--16)}
+\label{sec:deploy}
+\textbf{Merging} the adapter into base weights preserves $F_1$ exactly while
+removing PEFT overhead ($1.56\times$); adding \textbf{batched} inference
+(batch~8) reaches \textbf{2.77\,s/img}---a $5\times$ speedup over the adapter
+(Tab.~\ref{tab:deploy})---with $F_1$ differences within numerical noise
+($\sim$1--2 field flips over 294 shared files). External serving (vLLM/SGLang)
+was blocked by a CUDA-toolkit mismatch and is left as future work. A
+\textbf{GBIF validator} (Exp.~15) matched $85\,\%$ of names exactly and caught
+10 genuine spelling errors, but the $F_1$ delta was $0.000$: the model is
+already correct above $\tau$, and canonical forms occasionally conflict with the
+historical GT convention (blind country normalization,
+$\text{USA}\!\rightarrow\!\text{United States}$, even \emph{hurt} by $-0.12$).
+A four-model \textbf{GT audit} (Exp.~16) surfaced 51 likely GT omissions via
+consensus (e.g.\ missing \texttt{type\_status}, coordinates, and Latin
+remarks), while a naive \textbf{LLM corrector} for 47 GBIF-flagged names
+(Exp.~16.1) was net-negative ($3$ improved, $12$ worsened) by substituting
+modern synonyms (Ustilago$\rightarrow$Microbotryum) for historical names.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Method & $F_1$ & s/img & throughput \\
+\midrule
+LoRA adapter (PEFT, single) & 0.9720 & 14.0 & 4.3 img/min \\
+Merged, single & 0.9564$^{\ast}$ & 8.4 & 7.1 img/min \\
+\textbf{Merged, batch 8} & \textbf{0.9716} & \textbf{2.77} & \textbf{21.7 img/min} \\
+\bottomrule
+\end{tabular}
+\caption{Production variants (Exp.~14). $^{\ast}$on 79-test. Batch-8 throughput
+$\approx$33 GPU-days per $10^6$ images on one H100, or $\sim$8--9 days on
+$4\times$H100.}
+\label{tab:deploy}
+\end{table}
+
+\subsection{Generalization to \emph{Anthracoidea} (Exp.\,17)}
+\label{sec:anth}
+We applied the production model to \textbf{534 previously unseen}
+\emph{Anthracoidea} specimens (23 species), for which no ground truth exists.
+After identical preprocessing, the model produced valid JSON for
+\textbf{533/534 ($99.8\,\%$)} images at $12.1$\,s/img. Manual verification of 15
+random labels confirmed near-perfect extraction on printed and typewritten
+labels; residual errors concentrate on handwritten toponyms and on the
+normalized \texttt{scientific\_name}/\texttt{determiner} authorities, matching
+the corpus-level weaknesses (\cref{sec:results}).

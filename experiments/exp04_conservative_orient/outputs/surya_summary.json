@@ -1,0 +1,8 @@
+{
+  "engine": "surya",
+  "n_images": 394,
+  "n_ok": 394,
+  "n_err": 0,
+  "total_seconds": 1762.377637481317,
+  "mean_runtime": 4.351057666657625
+}

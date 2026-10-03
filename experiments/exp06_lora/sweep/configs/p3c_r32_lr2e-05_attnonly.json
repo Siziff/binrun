@@ -1,0 +1,10 @@
+{
+  "run_id": "p3c_r32_lr2e-05_attnonly",
+  "rank": 32,
+  "lr": 2e-05,
+  "epochs": 3,
+  "dropout": 0.05,
+  "target_modules": "attn-only",
+  "grad_accum": 8,
+  "warmup_ratio": 0.1
+}

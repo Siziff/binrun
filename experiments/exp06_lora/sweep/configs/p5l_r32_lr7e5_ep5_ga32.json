@@ -1,0 +1,10 @@
+{
+  "run_id": "p5l_r32_lr7e5_ep5_ga32",
+  "rank": 32,
+  "lr": 7e-05,
+  "epochs": 5,
+  "dropout": 0.05,
+  "target_modules": "all-linear",
+  "grad_accum": 32,
+  "warmup_ratio": 0.1
+}

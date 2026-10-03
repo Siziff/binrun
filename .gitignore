@@ -1,0 +1,31 @@
+# --- heavy / non-reproducible-by-git artefacts ---
+Smuts/
+data/*
+!data/gold/
+!data/gold/**
+models--*/
+xet/
+.locks/
+CACHEDIR.TAG
+
+# LoRA checkpoints (raw fp32, epoch-wise) — only bf16 split adapters under experiments/exp06_lora/adapters are tracked
+experiments/exp06_lora/checkpoints/
+experiments/exp06_lora/sweep/checkpoints/
+# reassembled adapters (regenerate with adapters/unpack_adapters.sh)
+experiments/exp06_lora/adapters/*/adapter_model.safetensors
+
+# --- python / tooling ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.agent_harnesses.json
+.check_for_update_done
+
+# --- LaTeX build ---
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.brf
+paper/*.log
+paper/*.out
+paper/*.synctex.gz

@@ -1,0 +1,112 @@
+{
+  "verbatim_identification": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Полное verbatim название таксона, как написано на этикетке (включая авторов, var./f./n. sp.)."
+  },
+  "verbatim_collector": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Сборщик, verbatim запись на этикетке."
+  },
+  "verbatim_locality": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Полная локация сбора, verbatim."
+  },
+  "verbatim_collection_date": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Дата сбора, как написано на этикетке."
+  },
+  "verbatim_substrate": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Растение-хозяин или субстрат, verbatim."
+  },
+  "verbatim_habitat": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Местообитание, verbatim."
+  },
+  "verbatim_identification_date": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Дата определения вида, verbatim."
+  },
+  "field_number": {
+    "type": "string",
+    "desc": "Полевой номер сборщика."
+  },
+  "verbatim_latitude": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Широта, verbatim (DMS или decimal)."
+  },
+  "verbatim_longitude": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Долгота, verbatim."
+  },
+  "verbatim_elevation": {
+    "type": "string",
+    "verbatim": true,
+    "desc": "Высота над уровнем моря, verbatim."
+  },
+  "exsiccata_title": {
+    "type": "string",
+    "desc": "Название серии эксикат (e.g. 'Sydow, Ustilagineen', 'Rabenhorst, Fungi europaei')."
+  },
+  "exsiccata_number": {
+    "type": "string",
+    "desc": "Номер в серии эксикат."
+  },
+  "type_status": {
+    "type": "string|null",
+    "enum": [
+      null,
+      "HOLOTYPE",
+      "ISOTYPE",
+      "LECTOTYPE",
+      "PARATYPE",
+      "SYNTYPE",
+      "TYPUS",
+      "OTHER"
+    ],
+    "desc": "Тип статуса, если есть стикер TYPUS / HOLOTYPE / и т.д."
+  },
+  "catalog_number": {
+    "type": "string",
+    "desc": "Каталожный номер LE F-XXXXX."
+  },
+  "scientific_name": {
+    "type": "string",
+    "normalized": true,
+    "desc": "Нормализованное научное название (текущая комбинация, без авторов)."
+  },
+  "determiner": {
+    "type": "string|null",
+    "normalized": true,
+    "desc": "Кто определил вид, нормализовано 'Фамилия И. О.'."
+  },
+  "collector": {
+    "type": "string|null",
+    "normalized": true,
+    "desc": "Сборщик, нормализовано 'Фамилия И. О.'."
+  },
+  "country": {
+    "type": "string|null",
+    "normalized": true,
+    "desc": "Страна сбора, нормализованное название."
+  },
+  "organism_remarks": {
+    "type": "string|null",
+    "verbatim": true,
+    "desc": "Замечания о биологии организма."
+  },
+  "identification_remarks": {
+    "type": "string|null",
+    "verbatim": true,
+    "desc": "Замечания об определении."
+  }
+}

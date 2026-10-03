@@ -1,0 +1,11 @@
+{
+  "run_id": "p5j_r32_lr7e5_ep5_a128",
+  "rank": 32,
+  "lr": 7e-05,
+  "epochs": 5,
+  "dropout": 0.05,
+  "target_modules": "all-linear",
+  "grad_accum": 8,
+  "warmup_ratio": 0.1,
+  "lora_alpha": 128
+}
