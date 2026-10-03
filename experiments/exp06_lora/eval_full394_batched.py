@@ -50,6 +50,9 @@ def main():
     ap.add_argument("--batch-size", type=int, default=8)
     ap.add_argument("--max-new-tokens", type=int, default=2048)
     ap.add_argument("--no-flash-attn", action="store_true")
+    ap.add_argument("--inputs", default=None,
+                    help="Inputs JSONL (records with 'image' + optional 'image_path'). "
+                         "Default: exp05 merged_inputs.jsonl (394 corpus).")
     args = ap.parse_args()
 
     model_path = Path(args.model_path).resolve()
@@ -57,7 +60,8 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Use merged_inputs.jsonl (394 imgs, has image_path + gt)
-    inputs_path = REPO_ROOT / "experiments/exp05_vlm_normalizer/merged_inputs.jsonl"
+    inputs_path = Path(args.inputs).resolve() if args.inputs else \
+        REPO_ROOT / "experiments/exp05_vlm_normalizer/merged_inputs.jsonl"
     records = list(read_jsonl(inputs_path))
     print(f"[run] model={model_path}", flush=True)
     print(f"[run] out={out_path}", flush=True)

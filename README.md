@@ -233,7 +233,173 @@ Merged production-модель (`data/models/production/qwen3vl_lora_p5j_merged`
 
 ---
 
-## 5. Как воспроизвести ключевые шаги
+## 5. Восстановление production-пайплайна распознавания (с нуля до JSON)
+
+Production-пайплайн = **препроцессинг v3 -> Qwen3-VL-8B-Instruct + LoRA `p5j` (prompt mode A) ->
+parse_response -> (опционально) валидатор v2**. Ниже — минимальный путь на чистой машине с одним
+GPU (>= 24 GB VRAM для peft-варианта, ~21 GB; merged + batch=8 — тоже укладывается в 80 GB H100).
+
+### Шаг 0. Клонировать и собрать адаптер
+
+```bash
+git clone https://github.com/Siziff/binrun.git TD && cd TD
+bash experiments/exp06_lora/adapters/unpack_adapters.sh p5j_r32_lr7e5_ep5_a256
+# -> experiments/exp06_lora/adapters/p5j_r32_lr7e5_ep5_a256/adapter_model.safetensors (166 MB, sha256 проверен)
+```
+
+### Шаг 1. Окружение `td-vlm` (inference + LoRA)
+
+```bash
+python3.11 -m venv data/envs/td-vlm
+data/envs/td-vlm/bin/pip install -r envs/requirements-td-vlm.txt    # torch 2.5.1+cu121, transformers 4.57.6, peft 0.19.1
+# flash-attn 2.7.4.post1: поставить prebuilt wheel под cu12/torch2.5/cp311, или пропустить и запускать с --no-flash-attn (SDPA, медленнее ~1.5x)
+export TD_PREF=vlm && source env.sh      # выставит HF_HOME=data/models/hf_cache, TMPDIR, PYTHONNOUSERSITE и т.д.
+```
+
+Если нужен ещё и препроцессинг на этой же машине — отдельно `td-ocr`
+(`envs/requirements-td-ocr.txt`: paddlex/paddleocr, python-doctr, transformers 4.49 для Grounding DINO).
+Окружения конфликтуют по версии transformers, поэтому держатся раздельно.
+
+### Шаг 2. Базовые веса
+
+```bash
+hf download Qwen/Qwen3-VL-8B-Instruct          # 17 GB — база для LoRA
+hf download IDEA-Research/grounding-dino-base  # 0.9 GB — только для препроцессинга v3
+# PaddleX PP-LCNet_x1_0_doc_ori и docTR db_resnet50 подтянутся сами при первом запуске preprocess_v3 (кэш в data/models/*)
+```
+
+### Шаг 3. Изображения -> препроцессинг v3
+
+Положить фотографии этикеток в любую папку (например `Smuts/Types/`, см. раздел 2.1) и прогнать:
+
+```bash
+export TD_PREF=ocr && source env.sh
+python -m src.preprocessing.preprocess_v3 \
+    --src-dir Smuts/Types --dst-dir data/preprocessed_v3/Smuts \
+    --index-path data/preprocessed_v3/preproc_index_v3.json --page-conf-threshold 0.92
+```
+
+На выходе — JPEG с исправленной ориентацией и `max_side=3000`. Модель обучалась именно на таких
+изображениях; подавать сырые кадры без поворота можно, но F1 будет ниже (см. Эксп. 1 vs 2 в RESULTS.md).
+При обучении processor Qwen3-VL ограничивал картинку `min_pixels=200704 … max_pixels=802816`
+(~900x900 px); в inference-скриптах используется дефолтный processor базовой модели — так были получены
+все production-метрики.
+
+### Шаг 4. Файл входов (JSONL)
+
+Одна строка на изображение; `image_path` — абсолютный или относительный путь к препроцессированному файлу.
+Пример — `experiments/exp17_anthracoidea/anthracoidea_inputs.jsonl`:
+
+```bash
+python - <<'EOF'
+import json, pathlib
+d = pathlib.Path("data/preprocessed_v3/Smuts")
+with open("my_inputs.jsonl", "w") as f:
+    for p in sorted(d.glob("*.JPG")):
+        f.write(json.dumps({"image": p.name, "image_path": str(p.resolve())}, ensure_ascii=False) + "\n")
+EOF
+```
+
+(Поле `gt` не обязательно; если его нет, скрипты просто не считают метрики.)
+
+### Шаг 5. Inference
+
+Вариант A — peft-адаптер поверх базы (F1 0.972, ~14 с/img на H100):
+
+```bash
+export TD_PREF=vlm && source env.sh
+python experiments/exp06_lora/eval_full394.py \
+    --adapter experiments/exp06_lora/adapters/p5j_r32_lr7e5_ep5_a256 \
+    --inputs my_inputs.jsonl \
+    --out outputs/my_preds.jsonl            # [--no-flash-attn] [--max-new-tokens 2048] [--limit N]
+```
+
+Вариант B — merged-модель + батчинг (F1 0.9716, ~2.8 с/img при batch=8, Эксп. 14):
+
+```bash
+python experiments/exp06_lora/merge_lora.py \
+    --adapter experiments/exp06_lora/adapters/p5j_r32_lr7e5_ep5_a256 \
+    --output  data/models/production/qwen3vl_lora_p5j_merged          # один раз, 17 GB
+python experiments/exp06_lora/eval_full394_batched.py \
+    --model-path data/models/production/qwen3vl_lora_p5j_merged \
+    --inputs my_inputs.jsonl --out outputs/my_preds_batched.jsonl --batch-size 8
+```
+
+Оба скрипта идемпотентны (`--no-resume`, чтобы пересчитать) и дописывают результат построчно.
+
+Что происходит внутри (если нужно встроить в свой код):
+
+```python
+# промпт: experiments/exp05_vlm_normalizer/prompts/{system.md,builder.py}, mode="A" (vision-only, zero-shot);
+# схема 21 поля: experiments/exp05_vlm_normalizer/field_schema.json
+from experiments.exp05_vlm_normalizer.prompts.builder import build_prompt
+from experiments.exp05_vlm_normalizer.run_qwen import parse_response   # <think>-strip, ```json-fence, самый большой {...}, умные кавычки
+
+prompt = build_prompt(mode="A")
+messages = [{"role": "system", "content": [{"type": "text", "text": prompt["system"]}]},
+            {"role": "user", "content": [... prompt["user_messages"] с подстановкой image_path ...]}]
+inputs = processor.apply_chat_template(messages, tokenize=True, add_generation_prompt=True,
+                                       return_dict=True, return_tensors="pt").to(model.device)
+out = model.generate(**inputs, max_new_tokens=2048, do_sample=False)     # greedy
+parsed, err = parse_response(processor.batch_decode(out[:, inputs["input_ids"].shape[-1]:], skip_special_tokens=True)[0])
+```
+
+### Шаг 6. Формат результата
+
+Каждая строка выходного JSONL:
+
+```json
+{"image": "LE F-198013.JPG", "model": "...", "mode": "A",
+ "raw_response": "```json\n{...}\n```",
+ "parsed_json": {"catalog_number": "LE F-198013", "scientific_name": "...", "...": "...", "exsiccata_number": null},
+ "parse_ok": true, "parse_error": "", "runtime_seconds": 13.9, "n_input_tokens": 1312, "n_output_tokens": 280}
+```
+
+`parsed_json` — словарь ровно с 21 ключом схемы (раздел 2.2), отсутствующие значения = `null`.
+Сводка по заполняемости полей (fill rate, parse rate, тайминги) для коллекции без GT:
+`python experiments/exp17_anthracoidea/summarize.py --in outputs/my_preds.jsonl --out-prefix outputs/my_summary`
+(пример — `experiments/exp17_anthracoidea/summary.md`).
+
+### Шаг 7 (опционально). Валидатор справочниками
+
+```bash
+python experiments/exp15_validator/validate_v2.py \
+    --input outputs/my_preds.jsonl --output outputs/my_preds_validated.jsonl --apply-corrections
+```
+
+Проверяет `scientific_name` через GBIF (Fungi) с fallback на Index Fungorum, `country` через REST
+Countries, `verbatim_substrate` (растение-хозяин) через GBIF Plantae; добавляет флаги/кандидаты
+исправлений, с `--apply-corrections` — переписывает поля. Нужен доступ в интернет; без ключей.
+
+### Шаг 8 (опционально). Метрики против GT
+
+Если во входах есть `gt` (как в `experiments/exp05_vlm_normalizer/merged_inputs.jsonl` для 394 Types):
+
+```bash
+python experiments/exp06_lora/per_field_analysis.py --evals outputs/my_preds.jsonl   # per-field F1/CER против data/gold
+python unified_eval.py                                                                 # сводная таблица по всем experiments/*/outputs
+```
+
+### Переобучение адаптера (если нужно)
+
+```bash
+export TD_PREF=vlm && source env.sh
+python experiments/exp06_lora/sweep_train.py \
+    --output-dir experiments/exp06_lora/sweep/checkpoints/p5j_retrain \
+    --lora-rank 32 --lora-alpha 256 --lr 7e-5 --epochs 5 --lora-dropout 0.05 \
+    --target-modules all-linear --grad-accum 8 --warmup-ratio 0.1 --max-pixels 802816
+# train split: experiments/exp06_lora/splits/train.jsonl (310 изобр. из data/preprocessed_v3/Smuts), ~24 мин на 1x H100
+```
+
+Известные грабли при восстановлении (подробнее — «Гайдлайны» в RESULTS.md):
+- при обучении `--max-pixels 802816` обязателен, иначе native-разрешение даёт ~6.5k image-токенов и OOM на batch=1;
+- при обучении после `get_peft_model()` нужен `model.enable_input_require_grads()` (уже в `sweep_train.py`);
+- `td-vllm`/`td-sglang` **не** нужны для production — только для бенчмарков сторонних OCR-VLM;
+- если flash-attn не собирается — все скрипты имеют `--no-flash-attn` и автоматический fallback на SDPA.
+
+---
+
+## 6. Как воспроизвести остальные эксперименты
 
 ```bash
 # 0. данные + препроцессинг v3 (раздел 2)
